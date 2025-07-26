@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "DM-Sans";
+  src: url("/src/assets/fonts/DMSans_24pt-Regular.ttf") format("truetype");
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-family-dmsans: "DM-Sans", sans-serif;
+
+  /* Map it to a Tailwind utility */
+  --font-dmsans: var(--font-family-dmsans);
+}
+
+/* Define your custom container utility */
+@utility max-w-container {
+  margin-inline: auto;
+  max-width: 1312px;
+  width: 100%;
+  /* max-width: 92vw; */
+}
+
+#app {
+  background-color: #fafafa;
+  font-family: var(--font-dmsans);
+}

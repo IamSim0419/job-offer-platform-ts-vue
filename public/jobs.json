@@ -1,0 +1,598 @@
+[
+  {
+    "id": 1,
+    "image": "src/assets/images/Linear.png",
+    "type": "Full-time",
+    "title": "Software Engineer",
+    "company": "Linear Company",
+    "date": "29 min ago",
+    "salary": {
+      "hourly": "51",
+      "monthly": "4000",
+      "annually": "40000"
+    },
+    "location": "Brussels",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 2,
+    "image": "src/assets/images/Notion.png",
+    "type": "Part-time",
+    "title": "Junior UI Designer",
+    "company": "Notion",
+    "date": "1 day ago",
+    "salary": {
+      "hourly": "32",
+      "monthly": "3200",
+      "annually": "32000"
+    },
+    "location": "Madrid",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 3,
+    "image": "src/assets/images/Spline.png",
+    "type": "Internship",
+    "title": "Technical Support Engineer",
+    "company": "Spline studio",
+    "date": "1 day ago",
+    "salary": {
+      "hourly": "50",
+      "monthly": "5000",
+      "annually": "55000"
+    },
+    "location": "United States",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 4,
+    "image": "src/assets/images/Raycast.png",
+    "type": "Full-time",
+    "title": "Product Designer",
+    "company": "Raycast corp",
+    "date": "2 days ago",
+    "salary": {
+      "hourly": "48",
+      "monthly": "4800",
+      "annually": "48000"
+    },
+    "location": "London",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 5,
+    "image": "src/assets/images/Loom.png",
+    "type": "Full-time",
+    "title": "Copywriter (Growth)",
+    "company": "Loom",
+    "date": "3 days ago",
+    "salary": {
+      "hourly": "38",
+      "monthly": "3800",
+      "annually": "45000"
+    },
+    "location": "Boston",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 6,
+    "image": "src/assets/images/Trainline.png",
+    "type": "Part-time",
+    "title": "Senior UX/UI designer",
+    "company": "Trainline group",
+    "date": "3 days ago",
+    "salary": {
+      "hourly": "50",
+      "monthly": "4000",
+      "annually": "42000"
+    },
+    "location": "Paris",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt.s"
+  },
+  {
+    "id": 7,
+    "image": "src/assets/images/Raycast.png",
+    "type": "Temporary",
+    "title": "Full Stack Developer",
+    "company": "Tech Solutions",
+    "date": "3 days ago",
+    "salary": {
+      "hourly": "60",
+      "monthly": "6000",
+      "annually": "62000"
+    },
+    "location": "Denver",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 8,
+    "image": "src/assets/images/Raycast.png",
+    "type": "Contract",
+    "title": "Security Engineer",
+    "company": "Secure Systems",
+    "date": "3 hours ago",
+    "salary": {
+      "hourly": "40",
+      "monthly": "4000",
+      "annually": "42000"
+    },
+    "location": "Miami",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 9,
+    "image": "src/assets/images/Raycast.png",
+    "type": "Full-time",
+    "title": "Product Manager",
+    "company": "Innovate Inc",
+    "date": "3 days ago",
+    "salary": {
+      "hourly": "43",
+      "monthly": "4300",
+      "annually": "43000"
+    },
+    "location": "Los Angeles",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 10,
+    "image": "src/assets/images/Trainline.png",
+    "type": "Part-time",
+    "title": "QA Engineer",
+    "company": "Quality Co",
+    "date": "4 days ago",
+    "salary": {
+      "hourly": "80",
+      "monthly": "8000",
+      "annually": "82000"
+    },
+    "location": "Portland",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 11,
+    "image": "src/assets/images/Raycast.png",
+    "type": "Full-time",
+    "title": "Machine Learning Engineer",
+    "company": "AI Solutions",
+    "date": "4 days ago",
+    "salary": {
+      "hourly": "60",
+      "monthly": "6500",
+      "annually": "65000"
+    },
+    "location": "San Diego",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 12,
+    "image": "src/assets/images/Raycast.png",
+    "type": "Remote",
+    "title": "Database Administrator",
+    "company": "Data Corp",
+    "date": "4 days ago",
+    "salary": {
+      "hourly": "40",
+      "monthly": "4000",
+      "annually": "42000"
+    },
+    "location": "Houston",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 13,
+    "image": "src/assets/images/Spline.png",
+    "type": "Full-time",
+    "title": "Frontend Developer",
+    "company": "Web Works",
+    "date": "5 days ago",
+    "salary": {
+      "hourly": "50",
+      "monthly": "4000",
+      "annually": "42000"
+    },
+    "location": "Phoenix",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 14,
+    "image": "src/assets/images/Raycast.png",
+    "type": "Part-time",
+    "title": "Content Strategist",
+    "company": "Marketing Inc",
+    "date": "5 days ago",
+    "salary": {
+      "hourly": "90",
+      "monthly": "9800",
+      "annually": "98000"
+    },
+    "location": "Atlanta",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 15,
+    "image": "src/assets/images/Raycast.png",
+    "type": "Full-time",
+    "title": "Cloud Architect",
+    "company": "Sky Tech",
+    "date": "1 week ago",
+    "salary": {
+      "hourly": "55",
+      "monthly": "5500",
+      "annually": "52000"
+    },
+    "location": "Dallas",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 16,
+    "image": "src/assets/images/Loom.png",
+    "type": "Remote",
+    "title": "Network Engineer",
+    "company": "Connect Inc",
+    "date": "7 days ago",
+    "salary": {
+      "hourly": "80",
+      "monthly": "8000",
+      "annually": "82000"
+    },
+    "location": "Orlando",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 17,
+    "image": "src/assets/images/Raycast.png",
+    "type": "Full-time",
+    "title": "Game Developer",
+    "company": "Game Studio",
+    "date": "7 days ago",
+    "salary": {
+      "hourly": "38",
+      "monthly": "3400",
+      "annually": "34000"
+    },
+    "location": "Las Vegas",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 18,
+    "image": "src/assets/images/Raycast.png",
+    "type": "Part-time",
+    "title": "Technical Writer",
+    "company": "Docs Inc",
+    "date": "8 days ago",
+    "salary": {
+      "hourly": "68",
+      "monthly": "6800",
+      "annually": "68000"
+    },
+    "location": "Raleigh",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 19,
+    "image": "src/assets/images/Linear.png",
+    "type": "Full-time",
+    "title": "Systems Analyst",
+    "company": "Tech Analysis",
+    "date": "8 days ago",
+    "salary": {
+      "hourly": "50",
+      "monthly": "4000",
+      "annually": "42000"
+    },
+    "location": "Minneapolis",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 20,
+    "image": "src/assets/images/Notion.png",
+    "type": "Contract",
+    "title": "Blockchain Developer",
+    "company": "Crypto Corp",
+    "date": "9 days ago",
+    "salary": {
+      "hourly": "70",
+      "monthly": "7300",
+      "annually": "70000"
+    },
+    "location": "San Jose",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 21,
+    "image": "src/assets/images/Linear.png",
+    "type": "Remote",
+    "title": "Software Engineer",
+    "company": "Linear Company",
+    "date": "29 min ago",
+    "salary": "50-55k",
+    "location": "Brussels",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 22,
+    "image": "src/assets/images/Notion.png",
+    "type": "Part-time",
+    "title": "Junior UI Designer",
+    "company": "Notion",
+    "date": "1 day ago",
+    "salary": {
+      "hourly": "30",
+      "monthly": "3000",
+      "annually": "32000"
+    },
+    "location": "Madrid",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 23,
+    "image": "src/assets/images/Spline.png",
+    "type": "Internship",
+    "title": "Technical Support Engineer",
+    "company": "Spline studio",
+    "date": "1 day ago",
+    "salary": {
+      "hourly": "50",
+      "monthly": "5000",
+      "annually": "50000"
+    },
+    "location": "United States",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 24,
+    "image": "src/assets/images/Raycast.png",
+    "type": "Full-time",
+    "title": "Product Designer",
+    "company": "Raycast corp",
+    "date": "2 days ago",
+    "salary": {
+      "hourly": "40",
+      "monthly": "4000",
+      "annually": "40000"
+    },
+    "location": "London",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 25,
+    "image": "src/assets/images/Loom.png",
+    "type": "Full-time",
+    "title": "Copywriter (Growth)",
+    "company": "Loom",
+    "date": "3 days ago",
+    "salary": {
+      "hourly": "38",
+      "monthly": "3800",
+      "annually": "38000"
+    },
+    "location": "Boston",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 26,
+    "image": "src/assets/images/Trainline.png",
+    "type": "Part-time",
+    "title": "Senior UX/UI designer",
+    "company": "Trainline group",
+    "date": "3 days ago",
+    "salary": {
+      "hourly": "40",
+      "monthly": "4000",
+      "annually": "42000"
+    },
+    "location": "Paris",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt.s"
+  },
+  {
+    "id": 27,
+    "image": "src/assets/images/Raycast.png",
+    "type": "Temporary",
+    "title": "Full Stack Developer",
+    "company": "Tech Solutions",
+    "date": "3 days ago",
+    "salary": {
+      "hourly": "50",
+      "monthly": "5000",
+      "annually": "58000"
+    },
+    "location": "Denver",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 28,
+    "image": "src/assets/images/Raycast.png",
+    "type": "Contract",
+    "title": "Security Engineer",
+    "company": "Secure Systems",
+    "date": "3 days ago",
+    "salary": {
+      "hourly": "40",
+      "monthly": "4000",
+      "annually": "45000"
+    },
+    "location": "Miami",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 29,
+    "image": "src/assets/images/Raycast.png",
+    "type": "Full-time",
+    "title": "Product Manager",
+    "company": "Innovate Inc",
+    "date": "3 days ago",
+    "salary": {
+      "hourly": "30",
+      "monthly": "3000",
+      "annually": "32000"
+    },
+    "location": "Los Angeles",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 30,
+    "image": "src/assets/images/Trainline.png",
+    "type": "Part-time",
+    "title": "QA Engineer",
+    "company": "Quality Co",
+    "date": "4 days ago",
+    "salary": {
+      "hourly": "80",
+      "monthly": "8000",
+      "annually": "80000"
+    },
+    "location": "Portland",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 31,
+    "image": "src/assets/images/Linear.png",
+    "type": "Full-time",
+    "title": "Software Engineer",
+    "company": "Linear Company",
+    "date": "29 min ago",
+    "salary": {
+      "hourly": "55",
+      "monthly": "5500",
+      "annually": "55000"
+    },
+    "location": "Brussels",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 32,
+    "image": "src/assets/images/Notion.png",
+    "type": "Part-time",
+    "title": "Junior UI Designer",
+    "company": "Notion",
+    "date": "1 day ago",
+    "salary": {
+      "hourly": "30",
+      "monthly": "3000",
+      "annually": "34000"
+    },
+    "location": "Madrid",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 33,
+    "image": "src/assets/images/Spline.png",
+    "type": "Internship",
+    "title": "Technical Support Engineer",
+    "company": "Spline studio",
+    "date": "1 day ago",
+    "salary": {
+      "hourly": "50",
+      "monthly": "5500",
+      "annually": "55000"
+    },
+    "location": "United States",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 34,
+    "image": "src/assets/images/Raycast.png",
+    "type": "Full-time",
+    "title": "Product Designer",
+    "company": "Raycast corp",
+    "date": "2 days ago",
+    "salary": {
+      "hourly": "42",
+      "monthly": "4000",
+      "annually": "42000"
+    },
+    "location": "London",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 35,
+    "image": "src/assets/images/Loom.png",
+    "type": "Full-time",
+    "title": "Copywriter (Growth)",
+    "company": "Loom",
+    "date": "3 days ago",
+    "salary": {
+      "hourly": "38",
+      "monthly": "3800",
+      "annually": "38000"
+    },
+    "location": "Boston",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 36,
+    "image": "src/assets/images/Trainline.png",
+    "type": "Part-time",
+    "title": "Senior UX/UI designer",
+    "company": "Trainline group",
+    "date": "3 days ago",
+    "salary": {
+      "hourly": "30",
+      "monthly": "3000",
+      "annually": "35000"
+    },
+    "location": "Paris",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt.s"
+  },
+  {
+    "id": 37,
+    "image": "src/assets/images/Raycast.png",
+    "type": "Temporary",
+    "title": "Full Stack Developer",
+    "company": "Tech Solutions",
+    "date": "3 days ago",
+    "salary": {
+      "hourly": "55",
+      "monthly": "5000",
+      "annually": "55000"
+    },
+    "location": "Denver",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 38,
+    "image": "src/assets/images/Raycast.png",
+    "type": "Contract",
+    "title": "Security Engineer",
+    "company": "Secure Systems",
+    "date": "3 days ago",
+    "salary": {
+      "hourly": "40",
+      "monthly": "4000",
+      "annually": "42000"
+    },
+    "location": "Miami",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 39,
+    "image": "src/assets/images/Raycast.png",
+    "type": "Full-time",
+    "title": "Product Manager",
+    "company": "Innovate Inc",
+    "date": "3 days ago",
+    "salary": {
+      "hourly": "40",
+      "monthly": "4000",
+      "annually": "42000"
+    },
+    "location": "Los Angeles",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  },
+  {
+    "id": 40,
+    "image": "src/assets/images/Trainline.png",
+    "type": "Part-time",
+    "title": "QA Engineer",
+    "company": "Quality Co",
+    "date": "4 days ago",
+    "salary": {
+      "hourly": "80",
+      "monthly": "8000",
+      "annually": "89000"
+    },
+    "location": "Portland",
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+  }
+]
