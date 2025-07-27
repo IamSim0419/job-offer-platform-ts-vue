@@ -1,5 +1,32 @@
-# Vue 3 + TypeScript + Vite
+# 💼 JobSpots — Job Offer Platform
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+**JobSpots** is a responsive job listing platform built with **Vue 3** and **TypeScript**, allowing users to search and filter job opportunities based on multiple criteria. It is optimized for both mobile and desktop experiences and uses mock data for quick frontend development and prototyping.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+---
+
+## 🚀 Features
+
+- 🔎 **Search** for job positions by keyword and location
+- ⚙️ **Filter** jobs by:
+  - Location
+  - Salary
+  - Date posted
+  - Experience level
+  - Employment type (Full-time, Part-time, Remote, etc.)
+- 📱 **Responsive design** for mobile, tablet, and desktop devices
+- 🌐 **Vue Router** for seamless page navigation
+- 🧠 **Pinia** for state management and fetching mock job data from `jobs.json`
+- 💡 Built with clean, modular code using **Composition API**
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology       | Purpose                          |
+| ---------------- | -------------------------------- |
+| **Vue 3**        | UI framework (Composition API)   |
+| **TypeScript**   | Type safety and tooling          |
+| **Pinia**        | Lightweight state management     |
+| **Vue Router**   | Client-side routing/navigation   |
+| **Tailwind CSS** | Utility-first responsive styling |
+| **jobs.json**    | Mock job data source             |
