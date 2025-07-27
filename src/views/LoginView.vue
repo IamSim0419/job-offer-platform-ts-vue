@@ -1,4 +1,6 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { RouterLink } from "vue-router";
+</script>
 
 <template>
   <section>
@@ -18,8 +20,13 @@
           <label for="password">Password</label>
           <input type="password" id="password" placeholder="Password" />
           <p class="forgot-password">Forgot password?</p>
-          <button class="login-btn">Log in</button>
-          <p class="">Don't have an account? <span>Sign-up</span></p>
+          <button class="login-btn">Login</button>
+          <p class="">
+            Don't have an account?
+            <span>
+              <RouterLink to="/sign-up"> Sign-up</RouterLink>
+            </span>
+          </p>
         </div>
 
         <div class="flex items-center">
@@ -29,8 +36,16 @@
         </div>
 
         <div class="btn-container">
-          <button class="fb">Login with Facebook</button>
-          <button class="google">Login with Google</button>
+          <button class="fb icon">
+            <img src="/src/assets/icons/facebook_svgrepo.com.svg" alt="" /><span
+              >Login with Facebook</span
+            >
+          </button>
+          <button class="google icon">
+            <img src="/src/assets/icons/google_svgrepo.com.svg" alt="" /><span
+              >Login with Google</span
+            >
+          </button>
         </div>
       </form>
     </div>
@@ -69,7 +84,7 @@ input::placeholder {
 }
 
 .email p {
-  @apply text-sm mt-2 text-center cursor-pointer;
+  @apply text-xs mt-2 text-center cursor-pointer;
 }
 
 .email span {
@@ -93,7 +108,7 @@ form button {
 }
 
 .btn-container button {
-  @apply block w-full;
+  @apply block w-full p-4;
 }
 
 .btn-container .fb {
@@ -101,6 +116,13 @@ form button {
 }
 
 .btn-container .google {
-  @apply bg-[#DB4437] text-white py-2 rounded-sm;
+  @apply bg-white text-black py-2 border border-gray-300 rounded-sm;
+}
+/* .btn-container .fb img {
+  @apply bg-white;
+} */
+
+.btn-container .icon > img {
+  @apply w-5 mr-3 inline-block;
 }
 </style>
