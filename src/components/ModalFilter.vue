@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 import { Icon } from "@iconify/vue";
 import { useJobStore } from "../stores/jobStore";
-defineProps<{
+import { watch } from "vue";
+const props = defineProps<{
   modelValue: boolean;
 }>();
 
@@ -14,6 +15,19 @@ const jobStore = useJobStore();
 function closeModal() {
   emit("update:modelValue", false);
 }
+
+// Prevent body scroll when modal is open
+watch(
+  () => props.modelValue,
+  (isOpen) => {
+    const body = document.body;
+    if (isOpen) {
+      body.style.overflow = "hidden"; // Prevent scrolling when modal is open
+    } else {
+      body.style.overflow = ""; // Restore scrolling when modal is closed
+    }
+  }
+);
 
 const locationOptions = [
   { value: "any", label: "Any Location" },
@@ -86,46 +100,24 @@ const employmentOptions = [
             </div>
           </div>
 
-          <!-- Salary filter -->
+          <!-- Employment Type filter -->
           <div class="filter-section">
-            <h4>Salary</h4>
-            <div class="salary-type-button">
-              <button
-                :class="{ active: jobStore.salaryFilterType === 'hourly' }"
-                @click="jobStore.setSalaryFilterType('hourly')"
-              >
-                Hourly
-              </button>
-
-              <button
-                :class="{ active: jobStore.salaryFilterType === 'monthly' }"
-                @click="jobStore.setSalaryFilterType('monthly')"
-              >
-                Monthly
-              </button>
-
-              <button
-                :class="{ active: jobStore.salaryFilterType === 'annually' }"
-                @click="jobStore.setSalaryFilterType('annually')"
-              >
-                Annually
-              </button>
-            </div>
-            <div>
-              <div
-                v-for="option in salaryOptions[jobStore.salaryFilterType]"
-                :key="option"
-                class="filter-option"
-              >
-                <input
-                  type="radio"
-                  :id="'salary-' + option"
-                  :value="option"
-                  v-model="jobStore.salaryFilterValue"
-                  @change="jobStore.setSalaryFilterValue(option)"
-                />
-                <label :for="'salary-' + option">> {{ option }}</label>
-              </div>
+            <h4>Type of employment</h4>
+            <div
+              v-for="option in employmentOptions"
+              :key="option.value"
+              class="filter-option"
+            >
+              <input
+                type="checkbox"
+                :id="'employment-' + option.value"
+                :value="option.value"
+                :checked="jobStore.employmentTypes.includes(option.value)"
+                @change="jobStore.toggleEmploymentType(option.value)"
+              />
+              <label :for="'employment-' + option.value">{{
+                option.label
+              }}</label>
             </div>
           </div>
 
@@ -171,24 +163,46 @@ const employmentOptions = [
             </div>
           </div>
 
-          <!-- Employment Type filter -->
-          <div class="filter-section">
-            <h4>Type of employment</h4>
-            <div
-              v-for="option in employmentOptions"
-              :key="option.value"
-              class="filter-option"
-            >
-              <input
-                type="checkbox"
-                :id="'employment-' + option.value"
-                :value="option.value"
-                :checked="jobStore.employmentTypes.includes(option.value)"
-                @change="jobStore.toggleEmploymentType(option.value)"
-              />
-              <label :for="'employment-' + option.value">{{
-                option.label
-              }}</label>
+          <!-- Salary filter -->
+          <div class="filter-section salary-filter">
+            <h4>Salary</h4>
+            <div class="salary-type-button">
+              <button
+                :class="{ active: jobStore.salaryFilterType === 'hourly' }"
+                @click="jobStore.setSalaryFilterType('hourly')"
+              >
+                Hourly
+              </button>
+
+              <button
+                :class="{ active: jobStore.salaryFilterType === 'monthly' }"
+                @click="jobStore.setSalaryFilterType('monthly')"
+              >
+                Monthly
+              </button>
+
+              <button
+                :class="{ active: jobStore.salaryFilterType === 'annually' }"
+                @click="jobStore.setSalaryFilterType('annually')"
+              >
+                Annually
+              </button>
+            </div>
+            <div>
+              <div
+                v-for="option in salaryOptions[jobStore.salaryFilterType]"
+                :key="option"
+                class="filter-option"
+              >
+                <input
+                  type="radio"
+                  :id="'salary-' + option"
+                  :value="option"
+                  v-model="jobStore.salaryFilterValue"
+                  @change="jobStore.setSalaryFilterValue(option)"
+                />
+                <label :for="'salary-' + option">> {{ option }}</label>
+              </div>
             </div>
           </div>
         </div>
@@ -205,7 +219,7 @@ const employmentOptions = [
 }
 
 .filter-content {
-  @apply bg-white border border-gray-300 p-6 md:p-12 max-w-[90%] mx-auto mt-24;
+  @apply bg-white border border-gray-300 rounded-md p-2 md:p-10 max-w-[90%] mx-auto mt-16 md:mt-24;
 }
 
 .grid {
@@ -216,12 +230,32 @@ const employmentOptions = [
   @apply absolute top-4 right-4 text-black cursor-pointer;
 }
 
+.filter-content .salary-filter {
+  @apply col-span-2;
+}
+
 .filter-section h4 {
   @apply text-[16px] font-semibold mb-2;
 }
 
 .filter-section .filter-option {
   @apply flex items-center gap-1 mt-1;
+}
+
+.salary-type-button button {
+  @apply text-[13px] grow p-2 border border-[#393F47] cursor-pointer;
+}
+
+.salary-type-button button.active {
+  @apply text-[13px] text-[#3575E2] bg-[rgba(53,116,226,0.2)] border border-[#3575E2];
+}
+
+.salary-type-button button:first-child {
+  @apply border border-r-0;
+}
+
+.salary-type-button button:last-child {
+  @apply border border-l-0;
 }
 
 @keyframes fadeIn {
