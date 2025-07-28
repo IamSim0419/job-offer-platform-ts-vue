@@ -116,7 +116,7 @@ section {
 }
 
 .search-form {
-  @apply flex flex-col md:flex-row border border-gray-300 overflow-hidden rounded-md md:rounded-r-none md:border-r-white flex-grow;
+  @apply flex flex-col md:flex-row border border-gray-300 overflow-hidden rounded-md md:rounded-r-none md:border-r-0 flex-grow;
 }
 
 .search-form .search-icon {

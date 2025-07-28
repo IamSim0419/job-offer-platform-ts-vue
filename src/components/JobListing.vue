@@ -3,10 +3,11 @@ import JobList from "@/components/JobList.vue";
 import { useJobStore } from "../stores/jobStore";
 import FilterLists from "./FilterLists.vue";
 import JobSubscription from "./JobSubscription.vue";
+import FilterModal from "./ModalFilter.vue";
 import { ref } from "vue";
 
 const jobStore = useJobStore();
-const isOpenFilter = ref(false);
+const showModalFilter = ref(false);
 
 const sortOptions = [
   { value: null, label: "" },
@@ -29,7 +30,7 @@ const sortOptions = [
         <div class="mobile-filter">
           <div class="filter-job">
             <img
-              @click="isOpenFilter = true"
+              @click="showModalFilter = true"
               class="filter-icon"
               src="@/assets/icons/Tune.svg"
               alt=""
@@ -63,18 +64,6 @@ const sortOptions = [
         <!-- Job lists -->
         <div class="job-lists relative" id="job-lists ">
           <JobList />
-
-          <div
-            v-if="isOpenFilter"
-            class="bg-blue-500 -inset-2 absolute opacity-50 z-50 lg:hidden"
-          >
-            <button
-              class="text-5xl float-end cursor-pointer"
-              @click="isOpenFilter = false"
-            >
-              X
-            </button>
-          </div>
         </div>
       </div>
 
@@ -82,6 +71,8 @@ const sortOptions = [
       <div class="lg:max-w-[250px]">
         <JobSubscription />
       </div>
+
+      <FilterModal v-model:modelValue="showModalFilter" />
     </div>
   </section>
 </template>

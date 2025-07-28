@@ -78,18 +78,6 @@ onMounted(() => {
         <p class="description">{{ job.description }}</p>
       </div>
     </div>
-
-    <!-- <div
-      v-show="(isOpenFilter = true)"
-      class="bg-blue-500 inset-2 absolute opacity-50 z-50 lg:hidden"
-    >
-      <button
-        class="text-5xl float-end cursor-pointer"
-        @click="isOpenFilter = false"
-      >
-        X
-      </button>
-    </div> -->
   </div>
 
   <PaginationButton />
@@ -103,7 +91,7 @@ onMounted(() => {
 }
 
 .job-card {
-  @apply md:flex bg-white p-4 md:p-6 border border-black/10 rounded-md shadow-sm cursor-pointer hover:scale-[0.99] hover:shadow-md transition-all;
+  @apply md:flex bg-white p-4 md:p-6 border border-black/10 rounded-md shadow-sm  hover:scale-[0.99] hover:shadow-md transition-all;
 }
 
 .job-card .company-icon {
@@ -124,6 +112,10 @@ onMounted(() => {
 
 .content p {
   @apply text-black/70 mt-3;
+}
+
+.job-title h3 {
+  @apply cursor-pointer;
 }
 
 .tag {

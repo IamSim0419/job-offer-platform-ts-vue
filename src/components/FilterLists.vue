@@ -65,7 +65,7 @@ const employmentOptions = [
     <!-- Salary filter -->
     <div class="filter-section">
       <h4>Salary</h4>
-      <div class="salary-type-buttons">
+      <div class="salary-type-button">
         <button
           :class="{ active: jobStore.salaryFilterType === 'hourly' }"
           @click="jobStore.setSalaryFilterType('hourly')"
@@ -181,19 +181,27 @@ const employmentOptions = [
   @apply text-[18px] mb-3;
 }
 
-.salary-type-buttons {
+.salary-type-button {
   @apply flex rounded-sm mb-3;
 }
 
-.salary-type-buttons button {
+.salary-type-button button {
   @apply text-[13px] grow p-2 border border-[#393F47] cursor-pointer;
 }
 
-.salary-type-buttons button.active {
+.salary-type-button button.active {
   @apply text-[13px] text-[#3575E2] bg-[rgba(53,116,226,0.2)] border border-[#3575E2];
 }
 
 .filter-option {
   @apply flex items-center gap-2 mt-1;
+}
+
+.salary-type-button button:first-child {
+  @apply border border-r-0;
+}
+
+.salary-type-button button:last-child {
+  @apply border border-l-0;
 }
 </style>
