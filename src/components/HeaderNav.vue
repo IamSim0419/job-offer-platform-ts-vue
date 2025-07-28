@@ -27,9 +27,9 @@ onBeforeUnmount(() => {
 
 const navLinks = [
   { name: "Start a search", href: "/" },
-  { name: "Jobs list", href: "/job-list" },
-  { name: "Salary estimate", href: "/salary" },
-  { name: "Pricing", href: "/pricing" },
+  { name: "Jobs list", href: "/sign-up" },
+  { name: "Salary estimate", href: "/sign-up" },
+  { name: "Pricing", href: "/sign-up" },
 ];
 </script>
 

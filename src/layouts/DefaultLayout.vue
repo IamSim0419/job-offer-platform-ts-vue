@@ -1,10 +1,12 @@
 <script lang="ts" setup>
-// import HeaderNav from "../components/HeaderNav.vue";
+import HeaderNav from "@/components/HeaderNav.vue";
 </script>
 
 <template>
-  <!-- <HeaderNav />
-  <RouterView /> -->
+  <main>
+    <HeaderNav />
+    <RouterView />
+  </main>
 </template>
 
 <style scoped>

@@ -1,9 +1,6 @@
-<script lang="ts" setup>
-import HeaderNav from "@/components/HeaderNav.vue";
-</script>
+<script lang="ts" setup></script>
 
 <template>
-  <HeaderNav />
   <RouterView />
 </template>
 

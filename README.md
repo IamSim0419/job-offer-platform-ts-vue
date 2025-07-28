@@ -30,3 +30,9 @@
 | **Vue Router**   | Client-side routing/navigation   |
 | **Tailwind CSS** | Utility-first responsive styling |
 | **jobs.json**    | Mock job data source             |
+
+## 🎨 Design Reference
+
+This project is built based on a design created in Figma:
+
+👉 [View Figma Design](https://www.figma.com/design/03uBXoLSNRGCB4ALSh4NAb/Job-offer-platform--Community-?node-id=0-1&p=f&t=dblEdTj20qSgVeaB-0)
