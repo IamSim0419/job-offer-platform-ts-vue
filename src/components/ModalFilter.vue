@@ -1,11 +1,12 @@
 <script lang="ts" setup>
+import { Icon } from "@iconify/vue";
 import { useJobStore } from "../stores/jobStore";
 defineProps<{
   modelValue: boolean;
 }>();
 
 const emit = defineEmits<{
-  "update:modelValue": [value: boolean];
+  "update:modelValue": [boolean];
 }>();
 
 const jobStore = useJobStore();
@@ -53,127 +54,143 @@ const employmentOptions = [
 <template>
   <Teleport to="body">
     <div class="filter-container animate-fadeIn" v-if="modelValue">
-      <span class="close-modal" @click.self="closeModal">X</span>
-      <h3>Filter</h3>
-
-      <!-- Location filter -->
-      <div class="filter-section">
-        <h4>Location</h4>
-        <div
-          v-for="option in locationOptions"
-          :key="option.value"
-          class="filter-option"
-        >
-          <input
-            type="radio"
-            :id="'location-' + option.value"
-            :value="option.value"
-            v-model="jobStore.locationFilter"
-            @change="jobStore.setLocationFilter(option.value)"
-          />
-          <label :for="'location-' + option.value">{{ option.label }}</label>
-        </div>
-      </div>
-
-      <!-- Salary filter -->
-      <div class="filter-section">
-        <h4>Salary</h4>
-        <div class="salary-type-button">
-          <button
-            :class="{ active: jobStore.salaryFilterType === 'hourly' }"
-            @click="jobStore.setSalaryFilterType('hourly')"
-          >
-            Hourly
-          </button>
-
-          <button
-            :class="{ active: jobStore.salaryFilterType === 'monthly' }"
-            @click="jobStore.setSalaryFilterType('monthly')"
-          >
-            Monthly
-          </button>
-
-          <button
-            :class="{ active: jobStore.salaryFilterType === 'annually' }"
-            @click="jobStore.setSalaryFilterType('annually')"
-          >
-            Annually
-          </button>
-        </div>
-        <div>
-          <div
-            v-for="option in salaryOptions[jobStore.salaryFilterType]"
-            :key="option"
-            class="filter-option"
-          >
-            <input
-              type="radio"
-              :id="'salary-' + option"
-              :value="option"
-              v-model="jobStore.salaryFilterValue"
-              @change="jobStore.setSalaryFilterValue(option)"
-            />
-            <label :for="'salary-' + option">> {{ option }}</label>
+      <span class="close-modal">
+        <Icon
+          @click.self="closeModal"
+          icon="mdi:close"
+          width="32"
+          height="32"
+        />
+      </span>
+      <div class="filter-content">
+        <h3 class="text-2xl font-semibold text-center mb-6">Filter</h3>
+        <div class="grid">
+          <!-- Location filter -->
+          <div class="filter-section">
+            <h4>Location</h4>
+            <div
+              v-for="option in locationOptions"
+              :key="option.value"
+              class="filter-option"
+            >
+              <input
+                type="radio"
+                :id="'location-' + option.value"
+                :value="option.value"
+                v-model="jobStore.locationFilter"
+                @change="jobStore.setLocationFilter(option.value)"
+              />
+              <label :for="'location-' + option.value">{{
+                option.label
+              }}</label>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <!-- Date filter -->
-      <div class="filter-section">
-        <h4>Date of posting</h4>
+          <!-- Salary filter -->
+          <div class="filter-section">
+            <h4>Salary</h4>
+            <div class="salary-type-button">
+              <button
+                :class="{ active: jobStore.salaryFilterType === 'hourly' }"
+                @click="jobStore.setSalaryFilterType('hourly')"
+              >
+                Hourly
+              </button>
 
-        <div
-          v-for="option in dateOptions"
-          :key="option.value"
-          class="filter-option"
-        >
-          <input
-            type="radio"
-            :id="'date-' + option.value"
-            :value="option.value"
-            v-model="jobStore.dateFilter"
-            @change="jobStore.setDateFilter(option.value)"
-          />
-          <label :for="'date-' + option.value">{{ option.label }}</label>
-        </div>
-      </div>
+              <button
+                :class="{ active: jobStore.salaryFilterType === 'monthly' }"
+                @click="jobStore.setSalaryFilterType('monthly')"
+              >
+                Monthly
+              </button>
 
-      <!-- Experience filter -->
-      <div class="filter-section">
-        <h4>Work experience</h4>
+              <button
+                :class="{ active: jobStore.salaryFilterType === 'annually' }"
+                @click="jobStore.setSalaryFilterType('annually')"
+              >
+                Annually
+              </button>
+            </div>
+            <div>
+              <div
+                v-for="option in salaryOptions[jobStore.salaryFilterType]"
+                :key="option"
+                class="filter-option"
+              >
+                <input
+                  type="radio"
+                  :id="'salary-' + option"
+                  :value="option"
+                  v-model="jobStore.salaryFilterValue"
+                  @change="jobStore.setSalaryFilterValue(option)"
+                />
+                <label :for="'salary-' + option">> {{ option }}</label>
+              </div>
+            </div>
+          </div>
 
-        <div
-          v-for="option in experienceOptions"
-          :key="option.value"
-          class="filter-option"
-        >
-          <input
-            type="radio"
-            :id="'experience-' + option.value"
-            :value="option.value"
-            v-model="jobStore.experienceFilter"
-            @change="jobStore.setExperienceFilter(option.value)"
-          />
-          <label :for="'experience-' + option.value">{{ option.label }}</label>
-        </div>
-      </div>
+          <!-- Date filter -->
+          <div class="filter-section">
+            <h4>Date of posting</h4>
 
-      <!-- Employment Type filter -->
-      <div class="filter-section">
-        <h4>Type of employment</h4>
-        <div
-          v-for="option in employmentOptions"
-          :key="option.value"
-          class="filter-option"
-        >
-          <input
-            type="checkbox"
-            :id="'employment-' + option.value"
-            :value="option.value"
-            :checked="jobStore.employmentTypes.includes(option.value)"
-            @change="jobStore.toggleEmploymentType(option.value)"
-          />
-          <label :for="'employment-' + option.value">{{ option.label }}</label>
+            <div
+              v-for="option in dateOptions"
+              :key="option.value"
+              class="filter-option"
+            >
+              <input
+                type="radio"
+                :id="'date-' + option.value"
+                :value="option.value"
+                v-model="jobStore.dateFilter"
+                @change="jobStore.setDateFilter(option.value)"
+              />
+              <label :for="'date-' + option.value">{{ option.label }}</label>
+            </div>
+          </div>
+
+          <!-- Experience filter -->
+          <div class="filter-section">
+            <h4>Work experience</h4>
+
+            <div
+              v-for="option in experienceOptions"
+              :key="option.value"
+              class="filter-option"
+            >
+              <input
+                type="radio"
+                :id="'experience-' + option.value"
+                :value="option.value"
+                v-model="jobStore.experienceFilter"
+                @change="jobStore.setExperienceFilter(option.value)"
+              />
+              <label :for="'experience-' + option.value">{{
+                option.label
+              }}</label>
+            </div>
+          </div>
+
+          <!-- Employment Type filter -->
+          <div class="filter-section">
+            <h4>Type of employment</h4>
+            <div
+              v-for="option in employmentOptions"
+              :key="option.value"
+              class="filter-option"
+            >
+              <input
+                type="checkbox"
+                :id="'employment-' + option.value"
+                :value="option.value"
+                :checked="jobStore.employmentTypes.includes(option.value)"
+                @change="jobStore.toggleEmploymentType(option.value)"
+              />
+              <label :for="'employment-' + option.value">{{
+                option.label
+              }}</label>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -184,11 +201,27 @@ const employmentOptions = [
 @reference 'tailwindcss';
 
 .filter-container {
-  @apply fixed inset-0 bg-emerald-500 flex flex-col items-center justify-center opacity-50 z-70;
+  @apply fixed inset-0 bg-white/90 z-70 lg:hidden; /* Using bg-white/90 instead of opacity */
+}
+
+.filter-content {
+  @apply bg-white border border-gray-300 p-6 md:p-12 max-w-[90%] mx-auto mt-24;
+}
+
+.grid {
+  @apply grid grid-cols-2 gap-4;
 }
 
 .close-modal {
-  @apply absolute top-4 right-4 text-white cursor-pointer;
+  @apply absolute top-4 right-4 text-black cursor-pointer;
+}
+
+.filter-section h4 {
+  @apply text-[16px] font-semibold mb-2;
+}
+
+.filter-section .filter-option {
+  @apply flex items-center gap-1 mt-1;
 }
 
 @keyframes fadeIn {

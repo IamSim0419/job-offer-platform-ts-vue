@@ -72,6 +72,7 @@ const sortOptions = [
         <JobSubscription />
       </div>
 
+      <!-- Modal Filter for Mobile and Tablet -->
       <FilterModal v-model:modelValue="showModalFilter" />
     </div>
   </section>
