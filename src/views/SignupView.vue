@@ -14,17 +14,22 @@ import { RouterLink } from "vue-router";
         <h3 class="text-[#141414]">Sign up</h3>
         <div class="username">
           <label for="username">Username</label>
-          <input type="text" id="username" placeholder="Username or Email" />
+          <input type="text" id="username" placeholder="Email" />
         </div>
-        <div class="email">
+        <div class="password">
           <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Password" />
-          <p class="forgot-password">Forgot password?</p>
+          <input type="password" id="password" placeholder="Create Password" />
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            placeholder="Confirm Password"
+          />
           <button class="login-btn">Login</button>
           <p class="">
-            Don't have an account?
+            Already have an account?
             <span>
-              <RouterLink to="/sign-up"> Sign-up</RouterLink>
+              <RouterLink to="/login">Login</RouterLink>
             </span>
           </p>
         </div>
@@ -79,15 +84,15 @@ input::placeholder {
   @apply text-sm text-gray-400;
 }
 .username,
-.email {
+.password {
   @apply flex flex-col text-[#141414];
 }
 
-.email p {
+.password p {
   @apply text-xs mt-2 text-center cursor-pointer;
 }
 
-.email span {
+.password span {
   @apply text-[#3575E2] font-semibold cursor-pointer;
 }
 
@@ -118,11 +123,16 @@ form button {
 .btn-container .google {
   @apply bg-white text-black py-2 border border-gray-300 rounded-sm;
 }
-/* .btn-container .fb img {
-  @apply bg-white;
-} */
 
 .btn-container .icon > img {
   @apply w-5 mr-3 inline-block;
+}
+
+label[for="confirm-password"] {
+  @apply mt-3;
+}
+
+input[id="confirm-password"] {
+  @apply mb-2;
 }
 </style>

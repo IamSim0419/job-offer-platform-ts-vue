@@ -11,7 +11,7 @@ import { RouterLink } from "vue-router";
           <h2>JobSpots</h2>
         </div>
 
-        <h3 class="text-[#141414]">Login</h3>
+        <h3 class="text-[#141414]">login</h3>
         <div class="username">
           <label for="username">Username</label>
           <input type="text" id="username" placeholder="Username or Email" />
