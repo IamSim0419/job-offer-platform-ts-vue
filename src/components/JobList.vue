@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { onMounted, ref, watch, nextTick } from "vue";
+import { onMounted, ref, nextTick } from "vue";
 import { useJobStore } from "../stores/jobStore";
 import PaginationButton from "./PaginationButton.vue";
 import { Icon } from "@iconify/vue";
@@ -15,36 +15,19 @@ const setJobListRefs = (el: HTMLElement | null, index: number) => {
   }
 };
 
-// Fetch jobs and animate when paginatedJobs changes
-onMounted(() => {
-  jobStore.fetchJobs();
-});
+onMounted(async () => {
+  await jobStore.fetchJobs();
 
-// Watch for changes in paginatedJobs to trigger animation
-watch(
-  () => jobStore.paginatedJobs,
-  (newJobs) => {
-    if (newJobs.length > 0) {
-      // Wait for the next DOM update cycle
-      nextTick(() => {
-        // Filter out undefined refs and ensure valid elements
-        const validRefs = jobListRefs.value.filter(
-          (el) => el instanceof HTMLElement
-        );
-        if (validRefs.length > 0) {
-          gsap.from(validRefs, {
-            scale: 0.8,
-            opacity: 1,
-            duration: 1,
-            stagger: 0.5,
-            ease: "power2.out",
-          });
-        }
-      });
-    }
-  },
-  { deep: true }
-);
+  await nextTick();
+
+  gsap.from(jobListRefs.value, {
+    opacity: 0,
+    scale: 0.8,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out",
+  });
+});
 </script>
 
 <template>
@@ -130,8 +113,14 @@ watch(
 }
 
 .job-card {
-  @apply md:flex bg-white p-4 md:p-6 border border-black/10 rounded-md shadow-sm  hover:scale-[0.99] hover:shadow-md transition-all;
+  @apply md:flex bg-white p-4 md:p-6 border border-black/10 rounded-md shadow-sm;
 }
+
+.job-card:hover {
+  @apply hover:scale-[0.99] hover:shadow-md transition-all;
+}
+
+/* hover:scale-[0.99] hover:shadow-md transition-all */
 
 .job-card .company-icon {
   @apply md:mr-6 h-[72px] md:w-[72px];
