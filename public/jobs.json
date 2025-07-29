@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "src/assets/images/Linear.png",
+    "image": "/images/Linear.png",
     "type": "Full-time",
     "title": "Software Engineer",
     "company": "Linear Company",
@@ -16,7 +16,7 @@
   },
   {
     "id": 2,
-    "image": "src/assets/images/Notion.png",
+    "image": "/images/Notion.png",
     "type": "Part-time",
     "title": "Junior UI Designer",
     "company": "Notion",
@@ -31,7 +31,7 @@
   },
   {
     "id": 3,
-    "image": "src/assets/images/Spline.png",
+    "image": "/images/Spline.png",
     "type": "Internship",
     "title": "Technical Support Engineer",
     "company": "Spline studio",
@@ -46,7 +46,7 @@
   },
   {
     "id": 4,
-    "image": "src/assets/images/Raycast.png",
+    "image": "/images/Raycast.png",
     "type": "Full-time",
     "title": "Product Designer",
     "company": "Raycast corp",
@@ -61,7 +61,7 @@
   },
   {
     "id": 5,
-    "image": "src/assets/images/Loom.png",
+    "image": "/images/Loom.png",
     "type": "Full-time",
     "title": "Copywriter (Growth)",
     "company": "Loom",
@@ -76,7 +76,7 @@
   },
   {
     "id": 6,
-    "image": "src/assets/images/Trainline.png",
+    "image": "/images/Trainline.png",
     "type": "Part-time",
     "title": "Senior UX/UI designer",
     "company": "Trainline group",
@@ -91,7 +91,7 @@
   },
   {
     "id": 7,
-    "image": "src/assets/images/Raycast.png",
+    "image": "/images/Raycast.png",
     "type": "Temporary",
     "title": "Full Stack Developer",
     "company": "Tech Solutions",
@@ -106,7 +106,7 @@
   },
   {
     "id": 8,
-    "image": "src/assets/images/Raycast.png",
+    "image": "/images/Raycast.png",
     "type": "Contract",
     "title": "Security Engineer",
     "company": "Secure Systems",
@@ -121,7 +121,7 @@
   },
   {
     "id": 9,
-    "image": "src/assets/images/Raycast.png",
+    "image": "/images/Raycast.png",
     "type": "Full-time",
     "title": "Product Manager",
     "company": "Innovate Inc",
@@ -136,7 +136,7 @@
   },
   {
     "id": 10,
-    "image": "src/assets/images/Trainline.png",
+    "image": "/images/Trainline.png",
     "type": "Part-time",
     "title": "QA Engineer",
     "company": "Quality Co",
@@ -151,7 +151,7 @@
   },
   {
     "id": 11,
-    "image": "src/assets/images/Raycast.png",
+    "image": "/images/Raycast.png",
     "type": "Full-time",
     "title": "Machine Learning Engineer",
     "company": "AI Solutions",
@@ -166,7 +166,7 @@
   },
   {
     "id": 12,
-    "image": "src/assets/images/Raycast.png",
+    "image": "/images/Raycast.png",
     "type": "Remote",
     "title": "Database Administrator",
     "company": "Data Corp",
@@ -181,7 +181,7 @@
   },
   {
     "id": 13,
-    "image": "src/assets/images/Spline.png",
+    "image": "/images/Spline.png",
     "type": "Full-time",
     "title": "Frontend Developer",
     "company": "Web Works",
@@ -196,7 +196,7 @@
   },
   {
     "id": 14,
-    "image": "src/assets/images/Raycast.png",
+    "image": "/images/Raycast.png",
     "type": "Part-time",
     "title": "Content Strategist",
     "company": "Marketing Inc",
@@ -211,7 +211,7 @@
   },
   {
     "id": 15,
-    "image": "src/assets/images/Raycast.png",
+    "image": "/images/Raycast.png",
     "type": "Full-time",
     "title": "Cloud Architect",
     "company": "Sky Tech",
@@ -226,7 +226,7 @@
   },
   {
     "id": 16,
-    "image": "src/assets/images/Loom.png",
+    "image": "/images/Loom.png",
     "type": "Remote",
     "title": "Network Engineer",
     "company": "Connect Inc",
@@ -241,7 +241,7 @@
   },
   {
     "id": 17,
-    "image": "src/assets/images/Raycast.png",
+    "image": "/images/Raycast.png",
     "type": "Full-time",
     "title": "Game Developer",
     "company": "Game Studio",
@@ -256,7 +256,7 @@
   },
   {
     "id": 18,
-    "image": "src/assets/images/Raycast.png",
+    "image": "/images/Raycast.png",
     "type": "Part-time",
     "title": "Technical Writer",
     "company": "Docs Inc",
@@ -271,7 +271,7 @@
   },
   {
     "id": 19,
-    "image": "src/assets/images/Linear.png",
+    "image": "/images/Linear.png",
     "type": "Full-time",
     "title": "Systems Analyst",
     "company": "Tech Analysis",
@@ -286,7 +286,7 @@
   },
   {
     "id": 20,
-    "image": "src/assets/images/Notion.png",
+    "image": "/images/Notion.png",
     "type": "Contract",
     "title": "Blockchain Developer",
     "company": "Crypto Corp",
@@ -301,7 +301,7 @@
   },
   {
     "id": 21,
-    "image": "src/assets/images/Linear.png",
+    "image": "/images/Linear.png",
     "type": "Remote",
     "title": "Software Engineer",
     "company": "Linear Company",
@@ -312,7 +312,7 @@
   },
   {
     "id": 22,
-    "image": "src/assets/images/Notion.png",
+    "image": "/images/Notion.png",
     "type": "Part-time",
     "title": "Junior UI Designer",
     "company": "Notion",
@@ -327,7 +327,7 @@
   },
   {
     "id": 23,
-    "image": "src/assets/images/Spline.png",
+    "image": "/images/Spline.png",
     "type": "Internship",
     "title": "Technical Support Engineer",
     "company": "Spline studio",
@@ -342,7 +342,7 @@
   },
   {
     "id": 24,
-    "image": "src/assets/images/Raycast.png",
+    "image": "/images/Raycast.png",
     "type": "Full-time",
     "title": "Product Designer",
     "company": "Raycast corp",
@@ -357,7 +357,7 @@
   },
   {
     "id": 25,
-    "image": "src/assets/images/Loom.png",
+    "image": "/images/Loom.png",
     "type": "Full-time",
     "title": "Copywriter (Growth)",
     "company": "Loom",
@@ -372,7 +372,7 @@
   },
   {
     "id": 26,
-    "image": "src/assets/images/Trainline.png",
+    "image": "/images/Trainline.png",
     "type": "Part-time",
     "title": "Senior UX/UI designer",
     "company": "Trainline group",
@@ -387,7 +387,7 @@
   },
   {
     "id": 27,
-    "image": "src/assets/images/Raycast.png",
+    "image": "/images/Raycast.png",
     "type": "Temporary",
     "title": "Full Stack Developer",
     "company": "Tech Solutions",
@@ -402,7 +402,7 @@
   },
   {
     "id": 28,
-    "image": "src/assets/images/Raycast.png",
+    "image": "/images/Raycast.png",
     "type": "Contract",
     "title": "Security Engineer",
     "company": "Secure Systems",
@@ -417,7 +417,7 @@
   },
   {
     "id": 29,
-    "image": "src/assets/images/Raycast.png",
+    "image": "/images/Raycast.png",
     "type": "Full-time",
     "title": "Product Manager",
     "company": "Innovate Inc",
@@ -432,7 +432,7 @@
   },
   {
     "id": 30,
-    "image": "src/assets/images/Trainline.png",
+    "image": "/images/Trainline.png",
     "type": "Part-time",
     "title": "QA Engineer",
     "company": "Quality Co",
@@ -447,7 +447,7 @@
   },
   {
     "id": 31,
-    "image": "src/assets/images/Linear.png",
+    "image": "/images/Linear.png",
     "type": "Full-time",
     "title": "Software Engineer",
     "company": "Linear Company",
@@ -462,7 +462,7 @@
   },
   {
     "id": 32,
-    "image": "src/assets/images/Notion.png",
+    "image": "/images/Notion.png",
     "type": "Part-time",
     "title": "Junior UI Designer",
     "company": "Notion",
@@ -477,7 +477,7 @@
   },
   {
     "id": 33,
-    "image": "src/assets/images/Spline.png",
+    "image": "/images/Spline.png",
     "type": "Internship",
     "title": "Technical Support Engineer",
     "company": "Spline studio",
@@ -492,7 +492,7 @@
   },
   {
     "id": 34,
-    "image": "src/assets/images/Raycast.png",
+    "image": "/images/Raycast.png",
     "type": "Full-time",
     "title": "Product Designer",
     "company": "Raycast corp",
@@ -507,7 +507,7 @@
   },
   {
     "id": 35,
-    "image": "src/assets/images/Loom.png",
+    "image": "/images/Loom.png",
     "type": "Full-time",
     "title": "Copywriter (Growth)",
     "company": "Loom",
@@ -522,7 +522,7 @@
   },
   {
     "id": 36,
-    "image": "src/assets/images/Trainline.png",
+    "image": "/images/Trainline.png",
     "type": "Part-time",
     "title": "Senior UX/UI designer",
     "company": "Trainline group",
@@ -537,7 +537,7 @@
   },
   {
     "id": 37,
-    "image": "src/assets/images/Raycast.png",
+    "image": "/images/Raycast.png",
     "type": "Temporary",
     "title": "Full Stack Developer",
     "company": "Tech Solutions",
@@ -552,7 +552,7 @@
   },
   {
     "id": 38,
-    "image": "src/assets/images/Raycast.png",
+    "image": "/images/Raycast.png",
     "type": "Contract",
     "title": "Security Engineer",
     "company": "Secure Systems",
@@ -567,7 +567,7 @@
   },
   {
     "id": 39,
-    "image": "src/assets/images/Raycast.png",
+    "image": "/images/Raycast.png",
     "type": "Full-time",
     "title": "Product Manager",
     "company": "Innovate Inc",
@@ -582,7 +582,7 @@
   },
   {
     "id": 40,
-    "image": "src/assets/images/Trainline.png",
+    "image": "/images/Trainline.png",
     "type": "Part-time",
     "title": "QA Engineer",
     "company": "Quality Co",

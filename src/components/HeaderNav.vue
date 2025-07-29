@@ -39,7 +39,7 @@ const navLinks = [
       <!-- Logo -->
       <RouterLink to="/">
         <div class="logo">
-          <img src="/src/assets/images/logo.svg" alt="JobSpots Logo" />
+          <img src="/src/assets/logo.svg" alt="JobSpots Logo" />
           <span>JobSpots</span>
         </div>
       </RouterLink>
