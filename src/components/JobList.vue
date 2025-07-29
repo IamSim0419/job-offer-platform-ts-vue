@@ -48,7 +48,7 @@ onMounted(async () => {
       :key="index"
       class="job-card"
     >
-      <h4 class="hidden">{{ job.company }} {{ job.id }}</h4>
+      <h4 class="hidden">{{ job.company }}</h4>
       <img :src="job.image" alt="Job image" class="company-icon" />
 
       <div class="content">
