@@ -1,15 +1,33 @@
 <script lang="ts" setup>
 import { useJobStore } from "../stores/jobStore";
-import { ref } from "vue";
+import { onMounted, ref, useTemplateRef } from "vue";
+import gsap from "gsap";
 
 const jobStore = useJobStore();
 const localSearchPosition = ref("");
 const localSearchLocation = ref("");
+const headingRef = useTemplateRef<HTMLElement | null>("headingRef");
+const subHeadingRef = useTemplateRef<HTMLElement | null>("subHeadingRef");
 
 function handleSearch() {
   jobStore.setSearchPosition(localSearchPosition.value.trim());
   jobStore.setSearchLocation(localSearchLocation.value.trim());
 }
+
+onMounted(() => {
+  const tl = gsap.timeline();
+  tl.from(headingRef.value, {
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out",
+  }).from(subHeadingRef.value, {
+    y: 30,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out",
+  });
+});
 </script>
 
 <template>
@@ -18,8 +36,8 @@ function handleSearch() {
     <div class="hero-grid"></div>
     <div class="hero-container">
       <div class="job-search">
-        <h1>Find your <span>new job</span> today</h1>
-        <p>
+        <h1 ref="headingRef">Find your <span>new job</span> today</h1>
+        <p ref="subHeadingRef">
           Thousand of jobs in the computer, engineering and technology sectors
           are waiting for you.
         </p>

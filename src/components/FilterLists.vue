@@ -5,12 +5,9 @@ const jobStore = useJobStore();
 
 const locationOptions = [
   { value: "any", label: "Any Location" },
-  { value: "near", label: "Near Me" },
   { value: "remote", label: "Remote Job" },
   { value: "exact", label: "Exact Location" },
-  { value: "15km", label: "Within 15 km" },
-  { value: "30km", label: "Within 30 km" },
-  { value: "50km", label: "Within 50 km" },
+  { value: "near", label: "Near Location" },
 ];
 
 const salaryOptions = {

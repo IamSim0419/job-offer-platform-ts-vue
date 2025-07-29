@@ -17,13 +17,6 @@ export const useJobStore = defineStore("job", () => {
   const employmentTypes = ref<string[]>([]);
   const sortBySalary = ref<SortType>(null);
 
-  // Helper function to parse salary string (e.g., "50-55k" -> [50-55] -> 52.5)
-  // const parseSalary = (salary: string): number => {
-  //   const cleanSalary = salary.replace("k", "").trim();
-  //   const [min, max] = cleanSalary.split("-").map(Number);
-  //   return (min + (max || min)) / 2; // Use min if no max (e.g., "50k")
-  // };
-
   const filteredJobs = computed(() => {
     let filtered = jobs.value;
 
@@ -46,16 +39,19 @@ export const useJobStore = defineStore("job", () => {
         filtered = filtered.filter((job) =>
           job.location.toLowerCase().includes("remote")
         );
-      } else if (locationFilter.value === "exact") {
-        filtered = filtered.filter((job) =>
-          job.location
-            .toLowerCase()
-            .includes(searchLocation.value.toLowerCase())
-        );
-      } else {
-        // Simplified: assume "near me" and distance filters match any non-remote location
+      } else if (locationFilter.value === "exact" && searchLocation.value) {
         filtered = filtered.filter(
-          (job) => !job.location.toLowerCase().includes("remote")
+          (job) =>
+            job.location.toLowerCase() === searchLocation.value.toLowerCase()
+        );
+      } else if (locationFilter.value === "near" && searchLocation.value) {
+        // Simplified: match locations containing the search term (no geolocation)
+        filtered = filtered.filter(
+          (job) =>
+            job.location
+              .toLowerCase()
+              .includes(searchLocation.value.toLowerCase()) &&
+            !job.location.toLowerCase().includes("remote")
         );
       }
     }
@@ -128,7 +124,8 @@ export const useJobStore = defineStore("job", () => {
     loading.value = true;
 
     try {
-      new Promise((resolve) => setTimeout(resolve, 1000)); // Simulate loading delay
+      // Simulate loading delay
+      await new Promise((resolve) => setTimeout(resolve, 1000));
       const response = await fetch("/jobs.json");
       jobs.value = await response.json();
     } catch (error) {

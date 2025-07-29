@@ -1,14 +1,50 @@
 <script lang="ts" setup>
-import { onMounted } from "vue";
+import { onMounted, ref, watch, nextTick } from "vue";
 import { useJobStore } from "../stores/jobStore";
 import PaginationButton from "./PaginationButton.vue";
 import { Icon } from "@iconify/vue";
+import gsap from "gsap";
 
 const jobStore = useJobStore();
+const jobListRefs = ref<HTMLElement[]>([]);
 
+// Function to set refs for job cards
+const setJobListRefs = (el: HTMLElement | null, index: number) => {
+  if (el) {
+    jobListRefs.value[index] = el;
+  }
+};
+
+// Fetch jobs and animate when paginatedJobs changes
 onMounted(() => {
   jobStore.fetchJobs();
 });
+
+// Watch for changes in paginatedJobs to trigger animation
+watch(
+  () => jobStore.paginatedJobs,
+  (newJobs) => {
+    if (newJobs.length > 0) {
+      // Wait for the next DOM update cycle
+      nextTick(() => {
+        // Filter out undefined refs and ensure valid elements
+        const validRefs = jobListRefs.value.filter(
+          (el) => el instanceof HTMLElement
+        );
+        if (validRefs.length > 0) {
+          gsap.from(validRefs, {
+            scale: 0.8,
+            opacity: 1,
+            duration: 1,
+            stagger: 0.5,
+            ease: "power2.out",
+          });
+        }
+      });
+    }
+  },
+  { deep: true }
+);
 </script>
 
 <template>
@@ -22,8 +58,9 @@ onMounted(() => {
     No jobs found matching your search criteria.
   </div>
 
-  <div else class="job-cards">
+  <div v-else class="job-cards">
     <div
+      :ref="(el) => setJobListRefs(el as HTMLElement, index)"
       v-for="(job, index) in jobStore.paginatedJobs"
       :key="index"
       class="job-card"
@@ -32,16 +69,18 @@ onMounted(() => {
       <img :src="job.image" alt="Job image" class="company-icon" />
 
       <div class="content">
-        <div class="job-title">
-          <h4>{{ job.company }} {{ job.id }}</h4>
-          <div class="tag">
-            <h3>{{ job.title }}</h3>
-            <!-- ! Temporary new post if statement -->
-            <span v-if="parseFloat(job.date) === 29" class="new-job-tag"
-              >New post</span
-            >
+        <RouterLink to="/sign-up">
+          <div class="job-title">
+            <h4>{{ job.company }} {{ job.id }}</h4>
+            <div class="tag">
+              <h3>{{ job.title }}</h3>
+              <!-- ! Temporary new post if statement -->
+              <span v-if="parseFloat(job.date) === 29" class="new-job-tag"
+                >New post</span
+              >
+            </div>
           </div>
-        </div>
+        </RouterLink>
 
         <div class="job-details">
           <span class="location">
