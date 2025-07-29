@@ -149,15 +149,29 @@ export const useJobStore = defineStore("job", () => {
     currentPage.value = totalPages.value;
   }
 
-  function setSearchPosition(value: string) {
-    searchPosition.value = value;
-    currentPage.value = 1;
+  async function searchJobs(position: string, location: string) {
+    loading.value = true;
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      searchPosition.value = position;
+      searchLocation.value = location;
+      currentPage.value = 1;
+    } catch (error) {
+      console.error("Error performing search:", error);
+    } finally {
+      loading.value = false;
+    }
   }
 
-  function setSearchLocation(value: string) {
-    searchLocation.value = value;
-    currentPage.value = 1;
-  }
+  // function setSearchPosition(value: string) {
+  //   searchPosition.value = value;
+  //   currentPage.value = 1;
+  // }
+
+  // function setSearchLocation(value: string) {
+  //   searchLocation.value = value;
+  //   currentPage.value = 1;
+  // }
 
   function setLocationFilter(value: string) {
     locationFilter.value = value;
@@ -219,9 +233,8 @@ export const useJobStore = defineStore("job", () => {
     setPage,
     goToFirstPage,
     goToLastPage,
-    setSearchPosition,
+    searchJobs,
     salaryFilterType,
-    setSearchLocation,
     setLocationFilter,
     setSalaryFilterType,
     setSalaryFilterValue,

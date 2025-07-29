@@ -9,9 +9,11 @@ const localSearchLocation = ref("");
 const headingRef = useTemplateRef<HTMLElement | null>("headingRef");
 const subHeadingRef = useTemplateRef<HTMLElement | null>("subHeadingRef");
 
-function handleSearch() {
-  jobStore.setSearchPosition(localSearchPosition.value.trim());
-  jobStore.setSearchLocation(localSearchLocation.value.trim());
+async function handleSearch() {
+  await jobStore.searchJobs(
+    localSearchPosition.value.trim(),
+    localSearchLocation.value.trim()
+  );
 }
 
 onMounted(() => {
