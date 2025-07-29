@@ -7,7 +7,7 @@ import { RouterLink } from "vue-router";
     <div class="form-container">
       <form action="">
         <div class="logo">
-          <img src="../assets/images/logo.svg" alt="" />
+          <img src="../assets/logo.svg" alt="" />
           <h2>JobSpots</h2>
         </div>
 
