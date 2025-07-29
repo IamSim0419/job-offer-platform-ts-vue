@@ -16,19 +16,6 @@ function closeModal() {
   emit("update:modelValue", false);
 }
 
-// Prevent body scroll when modal is open
-watch(
-  () => props.modelValue,
-  (isOpen) => {
-    const body = document.body;
-    if (isOpen) {
-      body.style.overflow = "hidden"; // Prevent scrolling when modal is open
-    } else {
-      body.style.overflow = ""; // Restore scrolling when modal is closed
-    }
-  }
-);
-
 const locationOptions = [
   { value: "any", label: "Any Location" },
   { value: "near", label: "Near Me" },
@@ -63,19 +50,28 @@ const employmentOptions = [
   { value: "temporary", label: "Temporary" },
   { value: "part-time", label: "Part-time" },
 ];
+
+// Prevent body scroll when modal is open
+watch(
+  () => props.modelValue,
+  (isOpen) => {
+    document.body.classList.toggle("modal-open", isOpen);
+  },
+  { immediate: true }
+);
 </script>
 
 <template>
   <Teleport to="body">
     <div class="filter-container animate-fadeIn" v-if="modelValue">
-      <span class="close-modal">
-        <Icon
-          @click.self="closeModal"
-          icon="mdi:close"
-          width="32"
-          height="32"
-        />
-      </span>
+      <Icon
+        icon="mdi:close"
+        width="32"
+        height="32"
+        class="close-modal"
+        @click.self="closeModal"
+      />
+
       <div class="filter-content">
         <h3 class="text-2xl font-semibold text-center mb-6">Filter</h3>
         <div class="grid">
@@ -188,21 +184,20 @@ const employmentOptions = [
                 Annually
               </button>
             </div>
-            <div>
-              <div
-                v-for="option in salaryOptions[jobStore.salaryFilterType]"
-                :key="option"
-                class="filter-option"
-              >
-                <input
-                  type="radio"
-                  :id="'salary-' + option"
-                  :value="option"
-                  v-model="jobStore.salaryFilterValue"
-                  @change="jobStore.setSalaryFilterValue(option)"
-                />
-                <label :for="'salary-' + option">> {{ option }}</label>
-              </div>
+
+            <div
+              v-for="option in salaryOptions[jobStore.salaryFilterType]"
+              :key="option"
+              class="filter-option"
+            >
+              <input
+                type="radio"
+                :id="'salary-' + option"
+                :value="option"
+                v-model="jobStore.salaryFilterValue"
+                @change="jobStore.setSalaryFilterValue(option)"
+              />
+              <label :for="'salary-' + option">> {{ option }}</label>
             </div>
           </div>
         </div>
@@ -215,11 +210,12 @@ const employmentOptions = [
 @reference 'tailwindcss';
 
 .filter-container {
-  @apply fixed inset-0 bg-white/90 z-70 lg:hidden; /* Using bg-white/90 instead of opacity */
+  /* Using bg-white/90 instead of opacity */
+  @apply fixed inset-0 bg-white/90 z-70 lg:hidden overflow-y-auto;
 }
 
 .filter-content {
-  @apply bg-white border border-gray-300 rounded-md p-2 md:p-10 max-w-[90%] mx-auto mt-16 md:mt-24;
+  @apply bg-white border border-gray-300 rounded-md p-3 md:p-10 max-w-[90%] mx-auto my-16 pb-4 md:mt-24;
 }
 
 .grid {
@@ -227,7 +223,7 @@ const employmentOptions = [
 }
 
 .close-modal {
-  @apply absolute top-4 right-4 text-black cursor-pointer;
+  @apply absolute top-4 right-7 text-black cursor-pointer bg-gray-300 hover:bg-gray-400;
 }
 
 .filter-content .salary-filter {
@@ -240,6 +236,10 @@ const employmentOptions = [
 
 .filter-section .filter-option {
   @apply flex items-center gap-1 mt-1;
+}
+
+.salary-type-button {
+  @apply mb-2;
 }
 
 .salary-type-button button {
@@ -271,5 +271,13 @@ const employmentOptions = [
 
 .animate-fadeIn {
   animation: fadeIn 0.2s ease-out;
+}
+
+::-webkit-scrollbar {
+  @apply w-1;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-500 rounded;
 }
 </style>

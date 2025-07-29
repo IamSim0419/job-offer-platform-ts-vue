@@ -24,3 +24,8 @@
   background-color: #fafafa;
   font-family: var(--font-dmsans);
 }
+
+body.modal-open {
+  overflow: hidden; /* Prevent body scroll when modal is open */
+  touch-action: none; /* Prevent touch actions */
+}
