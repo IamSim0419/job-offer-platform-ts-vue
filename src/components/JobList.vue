@@ -54,7 +54,7 @@ onMounted(async () => {
       <div class="content">
         <RouterLink to="/sign-up">
           <div class="job-title">
-            <h4>{{ job.company }} {{ job.id }}</h4>
+            <h4>{{ job.company }}</h4>
             <div class="tag">
               <h3>{{ job.title }}</h3>
               <!-- ! Temporary new post if statement -->
