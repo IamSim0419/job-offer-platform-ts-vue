@@ -4,7 +4,7 @@ import { useJobStore } from "../stores/jobStore";
 import FilterLists from "./FilterLists.vue";
 import JobSubscription from "./JobSubscription.vue";
 import FilterModal from "./ModalFilter.vue";
-import { ref } from "vue";
+import { computed, ref } from "vue";
 
 const jobStore = useJobStore();
 const showModalFilter = ref(false);
@@ -14,6 +14,8 @@ const sortOptions = [
   { value: "high-to-low", label: "High Salary" },
   { value: "low-to-high", label: "Low Salary" },
 ];
+
+const allJobs = computed(() => jobStore.filteredJobs.length);
 </script>
 
 <template>
@@ -35,7 +37,7 @@ const sortOptions = [
               src="@/assets/icons/Tune.svg"
               alt=""
             />
-            <span class="jobs">{{ jobStore.jobs.length }} Jobs</span>
+            <span class="jobs">{{ allJobs }} Jobs</span>
           </div>
 
           <!-- Sort Salary -->

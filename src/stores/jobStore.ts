@@ -137,7 +137,11 @@ export const useJobStore = defineStore("job", () => {
 
   function setPage(page: number) {
     if (page >= 1 && page <= totalPages.value) {
-      currentPage.value = page;
+      loading.value = true; // <-- show skeleton again
+      setTimeout(() => {
+        currentPage.value = page;
+        loading.value = false;
+      }, 200); // delay to simulate loading
     }
   }
 
@@ -232,5 +236,6 @@ export const useJobStore = defineStore("job", () => {
     setExperienceFilter,
     toggleEmploymentType,
     setSortBySalary,
+    filteredJobs,
   };
 });

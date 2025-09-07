@@ -2,6 +2,7 @@
 import { onMounted } from "vue";
 import { useJobStore } from "../stores/jobStore";
 import PaginationButton from "./PaginationButton.vue";
+import SkeletonCard from "./SkeletonCard.vue";
 
 const jobStore = useJobStore();
 
@@ -12,10 +13,8 @@ onMounted(() => {
 
 <template>
   <!-- Loading state -->
-  <div v-if="jobStore.loading" class="job-list flex flex-col gap-4 mb-8">
-    <div class="rounded-md overflow-hidden" v-for="(_, i) in 6" :key="i">
-      <div class="bg-gray-100 w-full p-25 shadow-md"></div>
-    </div>
+  <div v-if="jobStore.loading" class="skeleton">
+    <SkeletonCard />
   </div>
 
   <!-- No jobs -->
@@ -101,6 +100,10 @@ onMounted(() => {
 
 .job-card {
   @apply md:flex bg-white p-4 md:p-6 border border-black/10 rounded-md shadow-sm;
+}
+
+.skeleton {
+  @apply job-list flex flex-col gap-4 mb-8;
 }
 
 /* Hover effect */

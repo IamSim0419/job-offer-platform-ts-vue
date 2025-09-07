@@ -27,7 +27,14 @@ const paginationButtons = computed(() => {
 </script>
 
 <template>
-  <div v-if="jobStore.totalPages > 0 && !jobStore.loading" class="pagination">
+  <div
+    v-if="jobStore.loading"
+    class="skeleton-pagination flex justify-center gap-2 mt-12"
+  >
+    <div v-for="n in 5" :key="n" class="skeleton-page-btn"></div>
+  </div>
+
+  <div v-else-if="jobStore.totalPages > 0" class="pagination">
     <button
       :disabled="jobStore.currentPage === 1"
       @click="jobStore.setPage(jobStore.currentPage - 1)"
