@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { onMounted, ref, nextTick, watch, TransitionGroup } from "vue";
+import { onMounted } from "vue";
 import { useJobStore } from "../stores/jobStore";
 import PaginationButton from "./PaginationButton.vue";
 import { Icon } from "@iconify/vue";
