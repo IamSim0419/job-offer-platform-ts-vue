@@ -14,7 +14,7 @@ onMounted(() => {
 <template>
   <!-- Loading state -->
   <div v-if="jobStore.loading" class="skeleton">
-    <SkeletonCard />
+    <SkeletonCard v-for="i in 6" :key="i" />
   </div>
 
   <!-- No jobs -->
@@ -25,7 +25,7 @@ onMounted(() => {
   <!-- Jobs list with animation -->
   <div v-else class="job-cards">
     <TransitionGroup
-      name="fade-up"
+      name="scale-up"
       tag="div"
       class="flex flex-col gap-4"
       appear
@@ -33,7 +33,7 @@ onMounted(() => {
       <div
         v-for="(job, index) in jobStore.paginatedJobs"
         :key="job.id || index"
-        class="job-card"
+        class="job-card transition-transform duration-200 hover:scale-[0.99] hover:shadow-md"
         :style="{ transitionDelay: `${index * 0.12}s` }"
       >
         <h4 class="hidden">{{ job.company }}</h4>
@@ -99,16 +99,13 @@ onMounted(() => {
 @reference 'tailwindcss';
 
 .job-card {
-  @apply md:flex bg-white p-4 md:p-6 border border-black/10 rounded-md shadow-sm;
+  @apply md:flex bg-white p-4 md:p-6 border border-black/10 rounded-md shadow-sm
+         transition-transform  duration-200;
 }
 
-.skeleton {
-  @apply job-list flex flex-col gap-4 mb-8;
-}
-
-/* Hover effect */
+/* Hover = instant */
 .job-card:hover {
-  @apply hover:scale-[0.99] hover:shadow-md transition-all;
+  @apply scale-[0.99] shadow-md;
 }
 
 .job-card .company-icon {
@@ -159,35 +156,43 @@ onMounted(() => {
   @apply w-4;
 }
 
+.skeleton {
+  @apply flex flex-col gap-4 mb-8;
+}
+
 .no-result {
   @apply text-center my-40;
 }
 
 /* =========================
-   Animations
+   Scale-up Animation
    ========================= */
-.fade-up-enter-active {
-  transition: all 0.6s ease-out;
-}
-.fade-up-enter-from {
-  opacity: 0;
-  transform: translateY(20px);
-}
-.fade-up-enter-to {
-  opacity: 1;
-  transform: translateY(0);
+.scale-up-enter-active {
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.fade-up-leave-active {
+.scale-up-enter-from {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.scale-up-enter-to {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.scale-up-leave-active {
   transition: all 0.3s ease-in;
   position: absolute;
 }
-.fade-up-leave-from {
+
+.scale-up-leave-from {
   opacity: 1;
-  transform: translateY(0);
+  transform: scale(1);
 }
-.fade-up-leave-to {
+
+.scale-up-leave-to {
   opacity: 0;
-  transform: translateY(-10px);
+  transform: scale(0.95);
 }
 </style>
