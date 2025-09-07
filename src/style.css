@@ -3,13 +3,16 @@
   src: url("/src/assets/fonts/DMSans_24pt-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "DM-Sans_bold";
+  src: url("/src/assets/fonts/DMSans_24pt-Bold.ttf") format("truetype");
+}
+
 @import "tailwindcss";
 
 @theme {
-  --font-family-dmsans: "DM-Sans", sans-serif;
-
-  /* Map it to a Tailwind utility */
-  --font-dmsans: var(--font-family-dmsans);
+  --font-dmsans: "DM-Sans", sans-serif;
+  --font-dmsans_bold: "DM-Sans_bold", sans-serif;
 }
 
 /* Define your custom container utility */
