@@ -122,7 +122,7 @@ section {
 }
 
 .job-search h1 {
-  @apply text-[3rem] md:text-[3.5rem] text-[#141414] leading-16 md:leading-none;
+  @apply text-[3rem] md:text-[3.5rem] text-[#141414] leading-14 md:leading-none;
   font-family: var(--font-dmsans_bold);
 }
 
