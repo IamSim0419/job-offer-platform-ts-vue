@@ -1,32 +1,32 @@
 <script lang="ts" setup>
-import { onMounted, ref, nextTick } from "vue";
+import { onMounted, ref, nextTick, watch, TransitionGroup } from "vue";
 import { useJobStore } from "../stores/jobStore";
 import PaginationButton from "./PaginationButton.vue";
 import { Icon } from "@iconify/vue";
-import gsap from "gsap";
 
 const jobStore = useJobStore();
-const jobListRefs = ref<HTMLElement[]>([]);
+// const jobListRefs = ref<HTMLElement[]>([]);
 
 // Function to set refs for job cards
-const setJobListRefs = (el: HTMLElement | null, index: number) => {
-  if (el) {
-    jobListRefs.value[index] = el;
-  }
-};
+// const setJobListRefs = (el: HTMLElement | null, index: number) => {
+//   if (el) {
+//     jobListRefs.value[index] = el;
+//   }
+// };
 
-onMounted(async () => {
-  await jobStore.fetchJobs();
+onMounted(() => {
+  jobStore.fetchJobs();
+  // await animateJobCards();
 
-  await nextTick();
+  // await nextTick();
 
-  gsap.from(jobListRefs.value, {
-    opacity: 0,
-    scale: 0.8,
-    duration: 1,
-    stagger: 0.2,
-    ease: "power2.out",
-  });
+  // gsap.from(jobListRefs.value, {
+  //   opacity: 0,
+  //   scale: 0.8,
+  //   duration: 1,
+  //   stagger: 0.2,
+  //   ease: "power2.out",
+  // });
 });
 </script>
 
@@ -41,9 +41,8 @@ onMounted(async () => {
     No jobs found matching your search criteria.
   </div>
 
-  <div v-else class="job-cards">
+  <TransitionGroup v-else tag="div" name="job-list" class="job-cards">
     <div
-      :ref="(el) => setJobListRefs(el as HTMLElement, index)"
       v-for="(job, index) in jobStore.paginatedJobs"
       :key="index"
       class="job-card"
@@ -100,7 +99,7 @@ onMounted(async () => {
         <p class="description">{{ job.description }}</p>
       </div>
     </div>
-  </div>
+  </TransitionGroup>
 
   <PaginationButton />
 </template>
@@ -175,5 +174,34 @@ onMounted(async () => {
 
 .no-result {
   @apply text-center my-40;
+}
+
+/* TransitionGroup styles */
+.job-list-enter-from,
+.job-list-leave-to {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.job-list-enter-active {
+  transition: all 1s ease-out;
+}
+
+.job-list-leave-active {
+  transition: all 1s ease-in-out;
+  position: absolute;
+}
+
+.job-list-move {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Stagger effect using CSS custom property */
+.job-card {
+  transition-delay: calc(var(--index) * 0.2s);
+}
+
+.job-card {
+  --index: 0;
 }
 </style>

@@ -4,7 +4,7 @@ import JobListing from "@/components/JobListing.vue";
 </script>
 
 <template>
-  <main class="overflow-hidden">
+  <main>
     <HeroCom />
     <JobListing />
   </main>
@@ -12,4 +12,8 @@ import JobListing from "@/components/JobListing.vue";
 
 <style scoped>
 @reference 'tailwindcss';
+
+/* main {
+  @apply min-h-screen;
+} */
 </style>

@@ -1,9 +1,9 @@
 <script lang="ts" setup></script>
 
 <template>
-  <RouterView />
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <RouterView />
+    </div>
+  </div>
 </template>
-
-<style scoped>
-@reference 'tailwindcss';
-</style>

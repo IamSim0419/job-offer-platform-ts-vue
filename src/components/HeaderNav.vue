@@ -26,7 +26,7 @@ onBeforeUnmount(() => {
 });
 
 const navLinks = [
-  { name: "Start a search", href: "/" },
+  { name: "Start a search", href: "/home" },
   { name: "Jobs list", href: "/sign-up" },
   { name: "Salary estimate", href: "/sign-up" },
   { name: "Pricing", href: "/sign-up" },
@@ -37,7 +37,7 @@ const navLinks = [
   <header>
     <div class="container-header">
       <!-- Logo -->
-      <RouterLink to="/">
+      <RouterLink to="/home">
         <div class="logo">
           <img src="/src/assets/logo.svg" alt="JobSpots Logo" />
           <span>JobSpots</span>

@@ -14,6 +14,9 @@ async function handleSearch() {
     localSearchPosition.value.trim(),
     localSearchLocation.value.trim()
   );
+
+  localSearchPosition.value = "";
+  localSearchLocation.value = "";
 }
 
 onMounted(() => {

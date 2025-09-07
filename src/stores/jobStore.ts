@@ -163,16 +163,6 @@ export const useJobStore = defineStore("job", () => {
     }
   }
 
-  // function setSearchPosition(value: string) {
-  //   searchPosition.value = value;
-  //   currentPage.value = 1;
-  // }
-
-  // function setSearchLocation(value: string) {
-  //   searchLocation.value = value;
-  //   currentPage.value = 1;
-  // }
-
   function setLocationFilter(value: string) {
     locationFilter.value = value;
     currentPage.value = 1;
