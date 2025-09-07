@@ -6,9 +6,10 @@ export const useJobStore = defineStore("job", () => {
   const jobs = ref<Job[]>([]);
   const currentPage = ref(1);
   const itemsPerPage = 6;
+  const loading = ref(false);
+
   const searchPosition = ref("");
   const searchLocation = ref("");
-  const loading = ref(false);
   const locationFilter = ref<string>("any");
   const salaryFilterType = ref<Salary>("hourly");
   const salaryFilterValue = ref<string | number>("any");
@@ -117,15 +118,14 @@ export const useJobStore = defineStore("job", () => {
 
   const paginatedJobs = computed(() => {
     const start = (currentPage.value - 1) * itemsPerPage;
-    return filteredJobs.value.slice(0, start + itemsPerPage);
+    return filteredJobs.value.slice(start, start + itemsPerPage);
   });
-
   async function fetchJobs() {
     loading.value = true;
 
     try {
       // Simulate loading delay
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      await new Promise((resolve) => setTimeout(resolve, 500));
       const response = await fetch("/jobs.json");
       jobs.value = await response.json();
     } catch (error) {
