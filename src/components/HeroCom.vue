@@ -26,12 +26,16 @@ onMounted(() => {
     opacity: 0,
     duration: 1,
     ease: "power2.out",
-  }).from(subHeadingRef.value, {
-    y: 30,
-    opacity: 0,
-    duration: 1,
-    ease: "power2.out",
-  });
+  }).from(
+    subHeadingRef.value,
+    {
+      y: 30,
+      opacity: 0,
+      duration: 1,
+      ease: "power2.out",
+    },
+    "-=0.5"
+  );
 });
 </script>
 

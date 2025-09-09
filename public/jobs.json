@@ -1,598 +1,442 @@
 [
   {
     "id": 1,
-    "image": "/images/Linear.png",
-    "type": "Full-time",
-    "title": "Software Engineer",
-    "company": "Linear Company",
-    "date": "29 min ago",
-    "salary": {
-      "hourly": "51",
-      "monthly": "4000",
-      "annually": "40000"
-    },
-    "location": "Brussels",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Google.png",
+    "type": "Full-Time",
+    "title": "Frontend Engineer",
+    "company": "Google",
+    "date": "2 days ago",
+    "salary": { "hourly": "75", "monthly": "8000", "annually": "95000" },
+    "location": "San Francisco",
+    "description": "Work on modern web applications with a focus on performance and scalability. Collaborate closely with design and backend teams."
   },
   {
     "id": 2,
-    "image": "/images/Notion.png",
-    "type": "Part-time",
-    "title": "Junior UI Designer",
-    "company": "Notion",
-    "date": "1 day ago",
-    "salary": {
-      "hourly": "32",
-      "monthly": "3200",
-      "annually": "32000"
-    },
-    "location": "Madrid",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Figma.png",
+    "type": "Part-Time",
+    "title": "UI Designer",
+    "company": "Figma",
+    "date": "5 days ago",
+    "salary": { "hourly": "50", "monthly": "4200", "annually": "50000" },
+    "location": "Remote",
+    "description": "Design clean, intuitive user interfaces. Support product teams by creating reusable components and design systems."
   },
   {
     "id": 3,
-    "image": "/images/Spline.png",
-    "type": "Internship",
-    "title": "Technical Support Engineer",
-    "company": "Spline studio",
-    "date": "1 day ago",
-    "salary": {
-      "hourly": "50",
-      "monthly": "5000",
-      "annually": "55000"
-    },
-    "location": "United States",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Amazon.png",
+    "type": "Contract",
+    "title": "Cloud Architect",
+    "company": "Amazon Web Services",
+    "date": "1 week ago",
+    "salary": { "hourly": "85", "monthly": "9000", "annually": "110000" },
+    "location": "Seattle",
+    "description": "Architect scalable cloud solutions. Guide enterprise teams through best practices in AWS infrastructure."
   },
   {
     "id": 4,
-    "image": "/images/Raycast.png",
-    "type": "Full-time",
-    "title": "Product Designer",
-    "company": "Raycast corp",
-    "date": "2 days ago",
-    "salary": {
-      "hourly": "48",
-      "monthly": "4800",
-      "annually": "48000"
-    },
-    "location": "London",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Netflix.png",
+    "type": "Full-Time",
+    "title": "Backend Developer",
+    "company": "Netflix",
+    "date": "3 days ago",
+    "salary": { "hourly": "70", "monthly": "7500", "annually": "92000" },
+    "location": "Los Angeles",
+    "description": "Maintain and optimize backend services for high-volume streaming. Work with distributed systems and microservices."
   },
   {
     "id": 5,
-    "image": "/images/Loom.png",
-    "type": "Full-time",
-    "title": "Copywriter (Growth)",
-    "company": "Loom",
-    "date": "3 days ago",
-    "salary": {
-      "hourly": "38",
-      "monthly": "3800",
-      "annually": "45000"
-    },
-    "location": "Boston",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Slack.png",
+    "type": "Internship",
+    "title": "Product Intern",
+    "company": "Slack",
+    "date": "1 day ago",
+    "salary": { "hourly": "20", "monthly": "1600", "annually": "20000" },
+    "location": "Remote",
+    "description": "Assist the product team with research, user feedback, and documentation for upcoming features."
   },
   {
     "id": 6,
-    "image": "/images/Trainline.png",
-    "type": "Part-time",
-    "title": "Senior UX/UI designer",
-    "company": "Trainline group",
-    "date": "3 days ago",
-    "salary": {
-      "hourly": "50",
-      "monthly": "4000",
-      "annually": "42000"
-    },
-    "location": "Paris",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt.s"
+    "image": "/images/Airbnb.png",
+    "type": "Temporary",
+    "title": "Data Analyst",
+    "company": "Airbnb",
+    "date": "4 days ago",
+    "salary": { "hourly": "55", "monthly": "5800", "annually": "68000" },
+    "location": "New York",
+    "description": "Analyze booking and customer data. Provide insights that help optimize user experience and revenue streams."
   },
   {
     "id": 7,
-    "image": "/images/Raycast.png",
+    "image": "/images/Figma.png",
     "type": "Temporary",
     "title": "Full Stack Developer",
     "company": "Tech Solutions",
     "date": "3 days ago",
-    "salary": {
-      "hourly": "60",
-      "monthly": "6000",
-      "annually": "62000"
-    },
+    "salary": { "hourly": "60", "monthly": "6000", "annually": "62000" },
     "location": "Denver",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa."
   },
   {
     "id": 8,
-    "image": "/images/Raycast.png",
-    "type": "Contract",
-    "title": "Security Engineer",
-    "company": "Secure Systems",
-    "date": "3 hours ago",
-    "salary": {
-      "hourly": "40",
-      "monthly": "4000",
-      "annually": "42000"
-    },
-    "location": "Miami",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Microsoft.png",
+    "type": "Full-Time",
+    "title": "DevOps Engineer",
+    "company": "Microsoft",
+    "date": "6 days ago",
+    "salary": { "hourly": "72", "monthly": "7700", "annually": "95000" },
+    "location": "Redmond",
+    "description": "Maintain CI/CD pipelines, monitor infrastructure, and ensure application uptime across multiple teams."
   },
   {
     "id": 9,
-    "image": "/images/Raycast.png",
-    "type": "Full-time",
-    "title": "Product Manager",
-    "company": "Innovate Inc",
-    "date": "3 days ago",
-    "salary": {
-      "hourly": "43",
-      "monthly": "4300",
-      "annually": "43000"
-    },
-    "location": "Los Angeles",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Spotify.png",
+    "type": "Part-Time",
+    "title": "Mobile Developer",
+    "company": "Spotify",
+    "date": "2 weeks ago",
+    "salary": { "hourly": "65", "monthly": "5000", "annually": "78000" },
+    "location": "Stockholm",
+    "description": "Build and optimize mobile music streaming features. Collaborate with cross-functional teams."
   },
   {
     "id": 10,
-    "image": "/images/Trainline.png",
-    "type": "Part-time",
-    "title": "QA Engineer",
-    "company": "Quality Co",
-    "date": "4 days ago",
-    "salary": {
-      "hourly": "80",
-      "monthly": "8000",
-      "annually": "82000"
-    },
-    "location": "Portland",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Stripe.png",
+    "type": "Full-Time",
+    "title": "Payments Engineer",
+    "company": "Stripe",
+    "date": "1 day ago",
+    "salary": { "hourly": "90", "monthly": "9500", "annually": "120000" },
+    "location": "Dublin",
+    "description": "Work on secure and scalable payment infrastructure powering millions of transactions globally."
   },
   {
     "id": 11,
-    "image": "/images/Raycast.png",
-    "type": "Full-time",
-    "title": "Machine Learning Engineer",
-    "company": "AI Solutions",
-    "date": "4 days ago",
-    "salary": {
-      "hourly": "60",
-      "monthly": "6500",
-      "annually": "65000"
-    },
-    "location": "San Diego",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Dropbox.png",
+    "type": "Full-Time",
+    "title": "Security Engineer",
+    "company": "Dropbox",
+    "date": "5 days ago",
+    "salary": { "hourly": "80", "monthly": "8600", "annually": "102000" },
+    "location": "Austin",
+    "description": "Implement and monitor security measures across cloud storage systems. Conduct audits and patch vulnerabilities."
   },
   {
     "id": 12,
-    "image": "/images/Raycast.png",
-    "type": "Remote",
-    "title": "Database Administrator",
-    "company": "Data Corp",
-    "date": "4 days ago",
-    "salary": {
-      "hourly": "40",
-      "monthly": "4000",
-      "annually": "42000"
-    },
-    "location": "Houston",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Zoom.png",
+    "type": "Contract",
+    "title": "QA Tester",
+    "company": "Zoom",
+    "date": "2 days ago",
+    "salary": { "hourly": "40", "monthly": "4000", "annually": "48000" },
+    "location": "Remote",
+    "description": "Test video conferencing software for performance and usability. Report issues and validate bug fixes."
   },
   {
     "id": 13,
-    "image": "/images/Spline.png",
-    "type": "Full-time",
-    "title": "Frontend Developer",
-    "company": "Web Works",
-    "date": "5 days ago",
-    "salary": {
-      "hourly": "50",
-      "monthly": "4000",
-      "annually": "42000"
-    },
-    "location": "Phoenix",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Meta.png",
+    "type": "Full-Time",
+    "title": "Machine Learning Engineer",
+    "company": "Meta",
+    "date": "1 week ago",
+    "salary": { "hourly": "95", "monthly": "10000", "annually": "125000" },
+    "location": "Menlo Park",
+    "description": "Develop machine learning models for personalized recommendations and content delivery."
   },
   {
     "id": 14,
-    "image": "/images/Raycast.png",
-    "type": "Part-time",
+    "image": "/images/X.png",
+    "type": "Part-Time",
     "title": "Content Strategist",
-    "company": "Marketing Inc",
-    "date": "5 days ago",
-    "salary": {
-      "hourly": "90",
-      "monthly": "9800",
-      "annually": "98000"
-    },
-    "location": "Atlanta",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "company": "X",
+    "date": "4 days ago",
+    "salary": { "hourly": "35", "monthly": "2800", "annually": "35000" },
+    "location": "Remote",
+    "description": "Plan and optimize content strategies that align with user engagement metrics."
   },
   {
     "id": 15,
-    "image": "/images/Raycast.png",
-    "type": "Full-time",
-    "title": "Cloud Architect",
-    "company": "Sky Tech",
-    "date": "1 week ago",
-    "salary": {
-      "hourly": "55",
-      "monthly": "5500",
-      "annually": "52000"
-    },
-    "location": "Dallas",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Uber.png",
+    "type": "Full-Time",
+    "title": "Data Scientist",
+    "company": "Uber",
+    "date": "3 days ago",
+    "salary": { "hourly": "85", "monthly": "9000", "annually": "110000" },
+    "location": "Chicago",
+    "description": "Analyze large transportation datasets to improve routing and demand prediction algorithms."
   },
   {
     "id": 16,
-    "image": "/images/Loom.png",
-    "type": "Remote",
-    "title": "Network Engineer",
-    "company": "Connect Inc",
-    "date": "7 days ago",
-    "salary": {
-      "hourly": "80",
-      "monthly": "8000",
-      "annually": "82000"
-    },
-    "location": "Orlando",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/LinkedIn.png",
+    "type": "Internship",
+    "title": "Software Intern",
+    "company": "LinkedIn",
+    "date": "1 day ago",
+    "salary": { "hourly": "22", "monthly": "1700", "annually": "21000" },
+    "location": "Sunnyvale",
+    "description": "Work on internal tools and assist senior engineers in building networking features."
   },
   {
     "id": 17,
-    "image": "/images/Raycast.png",
-    "type": "Full-time",
-    "title": "Game Developer",
-    "company": "Game Studio",
-    "date": "7 days ago",
-    "salary": {
-      "hourly": "38",
-      "monthly": "3400",
-      "annually": "34000"
-    },
-    "location": "Las Vegas",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Salesforce.png",
+    "type": "Contract",
+    "title": "CRM Consultant",
+    "company": "Salesforce",
+    "date": "2 weeks ago",
+    "salary": { "hourly": "65", "monthly": "7000", "annually": "84000" },
+    "location": "Dallas",
+    "description": "Configure and customize CRM platforms for enterprise clients, ensuring business alignment."
   },
   {
     "id": 18,
-    "image": "/images/Raycast.png",
-    "type": "Part-time",
-    "title": "Technical Writer",
-    "company": "Docs Inc",
-    "date": "8 days ago",
-    "salary": {
-      "hourly": "68",
-      "monthly": "6800",
-      "annually": "68000"
-    },
-    "location": "Raleigh",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Adobe.png",
+    "type": "Full-Time",
+    "title": "Visual Designer",
+    "company": "Adobe",
+    "date": "6 days ago",
+    "salary": { "hourly": "55", "monthly": "5800", "annually": "70000" },
+    "location": "San Jose",
+    "description": "Create engaging visual assets and collaborate with UX teams to deliver consistent design systems."
   },
   {
     "id": 19,
-    "image": "/images/Linear.png",
-    "type": "Full-time",
-    "title": "Systems Analyst",
-    "company": "Tech Analysis",
-    "date": "8 days ago",
-    "salary": {
-      "hourly": "50",
-      "monthly": "4000",
-      "annually": "42000"
-    },
-    "location": "Minneapolis",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Intel.png",
+    "type": "Full-Time",
+    "title": "Hardware Engineer",
+    "company": "Intel",
+    "date": "3 days ago",
+    "salary": { "hourly": "88", "monthly": "9300", "annually": "115000" },
+    "location": "Portland",
+    "description": "Design and test next-generation processors and contribute to R&D projects in hardware innovation."
   },
   {
     "id": 20,
-    "image": "/images/Notion.png",
-    "type": "Contract",
-    "title": "Blockchain Developer",
-    "company": "Crypto Corp",
-    "date": "9 days ago",
-    "salary": {
-      "hourly": "70",
-      "monthly": "7300",
-      "annually": "70000"
-    },
-    "location": "San Jose",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Shopify.png",
+    "type": "Temporary",
+    "title": "E-commerce Specialist",
+    "company": "Shopify",
+    "date": "5 days ago",
+    "salary": { "hourly": "48", "monthly": "4500", "annually": "56000" },
+    "location": "Remote",
+    "description": "Support merchants by optimizing online store setups and enhancing user shopping experiences."
   },
   {
     "id": 21,
-    "image": "/images/Linear.png",
-    "type": "Remote",
-    "title": "Software Engineer",
-    "company": "Linear Company",
-    "date": "1 day ago",
-    "salary": "50-55k",
-    "location": "Brussels",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Tesla.png",
+    "type": "Full-Time",
+    "title": "Automation Engineer",
+    "company": "Tesla",
+    "date": "2 days ago",
+    "salary": { "hourly": "92", "monthly": "9800", "annually": "118000" },
+    "location": "Palo Alto",
+    "description": "Develop and maintain automation systems for manufacturing. Improve efficiency and reliability of production lines."
   },
   {
     "id": 22,
-    "image": "/images/Notion.png",
-    "type": "Part-time",
-    "title": "Junior UI Designer",
-    "company": "Notion",
-    "date": "1 day ago",
-    "salary": {
-      "hourly": "30",
-      "monthly": "3000",
-      "annually": "32000"
-    },
-    "location": "Madrid",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Snapchat.png",
+    "type": "Part-Time",
+    "title": "AR Developer",
+    "company": "Snapchat",
+    "date": "1 week ago",
+    "salary": { "hourly": "60", "monthly": "5200", "annually": "75000" },
+    "location": "Los Angeles",
+    "description": "Build augmented reality features and filters. Work with creative teams to bring ideas to life."
   },
   {
     "id": 23,
-    "image": "/images/Spline.png",
-    "type": "Internship",
-    "title": "Technical Support Engineer",
-    "company": "Spline studio",
-    "date": "1 day ago",
-    "salary": {
-      "hourly": "50",
-      "monthly": "5000",
-      "annually": "50000"
-    },
-    "location": "United States",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Oracle.png",
+    "type": "Contract",
+    "title": "Database Administrator",
+    "company": "Oracle",
+    "date": "3 days ago",
+    "salary": { "hourly": "70", "monthly": "7600", "annually": "94000" },
+    "location": "Austin",
+    "description": "Maintain enterprise-level databases. Optimize performance, ensure backups, and monitor reliability."
   },
   {
     "id": 24,
-    "image": "/images/Raycast.png",
-    "type": "Full-time",
-    "title": "Product Designer",
-    "company": "Raycast corp",
+    "image": "/images/Apple.png",
+    "type": "Full-Time",
+    "title": "iOS Developer",
+    "company": "Apple",
     "date": "2 days ago",
-    "salary": {
-      "hourly": "40",
-      "monthly": "4000",
-      "annually": "40000"
-    },
-    "location": "London",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "salary": { "hourly": "88", "monthly": "9500", "annually": "115000" },
+    "location": "Cupertino",
+    "description": "Develop iOS applications for global products. Collaborate with design and hardware teams."
   },
   {
     "id": 25,
-    "image": "/images/Loom.png",
-    "type": "Full-time",
-    "title": "Copywriter (Growth)",
-    "company": "Loom",
-    "date": "3 days ago",
-    "salary": {
-      "hourly": "38",
-      "monthly": "3800",
-      "annually": "38000"
-    },
-    "location": "Boston",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Samsung.png",
+    "type": "Full-Time",
+    "title": "Firmware Engineer",
+    "company": "Samsung",
+    "date": "1 week ago",
+    "salary": { "hourly": "78", "monthly": "8200", "annually": "100000" },
+    "location": "Seoul",
+    "description": "Develop and optimize firmware for consumer electronics. Work with hardware integration teams."
   },
   {
     "id": 26,
-    "image": "/images/Trainline.png",
-    "type": "Part-time",
-    "title": "Senior UX/UI designer",
-    "company": "Trainline group",
-    "date": "3 days ago",
-    "salary": {
-      "hourly": "40",
-      "monthly": "4000",
-      "annually": "42000"
-    },
-    "location": "Paris",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt.s"
+    "image": "/images/Ibm.png",
+    "type": "Full-Time",
+    "title": "Blockchain Developer",
+    "company": "IBM",
+    "date": "6 days ago",
+    "salary": { "hourly": "82", "monthly": "8700", "annually": "108000" },
+    "location": "New York",
+    "description": "Work on blockchain solutions for enterprise clients. Implement smart contracts and ledger systems."
   },
   {
     "id": 27,
-    "image": "/images/Raycast.png",
-    "type": "Temporary",
-    "title": "Full Stack Developer",
-    "company": "Tech Solutions",
-    "date": "3 days ago",
-    "salary": {
-      "hourly": "50",
-      "monthly": "5000",
-      "annually": "58000"
-    },
-    "location": "Denver",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Nvidia.png",
+    "type": "Full-Time",
+    "title": "Graphics Engineer",
+    "company": "Nvidia",
+    "date": "5 days ago",
+    "salary": { "hourly": "95", "monthly": "10000", "annually": "125000" },
+    "location": "Santa Clara",
+    "description": "Develop and optimize GPU technologies. Work on next-generation rendering and AI graphics features."
   },
   {
     "id": 28,
-    "image": "/images/Raycast.png",
+    "image": "/images/Sony.png",
     "type": "Contract",
-    "title": "Security Engineer",
-    "company": "Secure Systems",
-    "date": "3 days ago",
-    "salary": {
-      "hourly": "40",
-      "monthly": "4000",
-      "annually": "45000"
-    },
-    "location": "Miami",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "title": "Game Developer",
+    "company": "Sony",
+    "date": "2 weeks ago",
+    "salary": { "hourly": "65", "monthly": "6800", "annually": "82000" },
+    "location": "Tokyo",
+    "description": "Develop game features and optimize performance for PlayStation titles."
   },
   {
     "id": 29,
-    "image": "/images/Raycast.png",
-    "type": "Full-time",
-    "title": "Product Manager",
-    "company": "Innovate Inc",
+    "image": "/images/Adobe.png",
+    "type": "Internship",
+    "title": "Design Intern",
+    "company": "Adobe",
     "date": "3 days ago",
-    "salary": {
-      "hourly": "30",
-      "monthly": "3000",
-      "annually": "32000"
-    },
-    "location": "Los Angeles",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "salary": { "hourly": "20", "monthly": "1600", "annually": "20000" },
+    "location": "Remote",
+    "description": "Assist design teams in creating assets and prototypes for Adobe Creative Suite."
   },
   {
     "id": 30,
-    "image": "/images/Trainline.png",
-    "type": "Part-time",
-    "title": "QA Engineer",
-    "company": "Quality Co",
-    "date": "4 days ago",
-    "salary": {
-      "hourly": "80",
-      "monthly": "8000",
-      "annually": "80000"
-    },
+    "image": "/images/Intel.png",
+    "type": "Full-Time",
+    "title": "AI Researcher",
+    "company": "Intel Labs",
+    "date": "1 week ago",
+    "salary": { "hourly": "100", "monthly": "11000", "annually": "135000" },
     "location": "Portland",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "description": "Conduct AI research on neural networks and machine learning at scale."
   },
   {
     "id": 31,
-    "image": "/images/Linear.png",
-    "type": "Full-time",
-    "title": "Software Engineer",
-    "company": "Linear Company",
+    "image": "/images/Paypal.png",
+    "type": "Full-Time",
+    "title": "Payment Security Specialist",
+    "company": "PayPal",
     "date": "4 days ago",
-    "salary": {
-      "hourly": "55",
-      "monthly": "5500",
-      "annually": "55000"
-    },
-    "location": "Brussels",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "salary": { "hourly": "78", "monthly": "8200", "annually": "99000" },
+    "location": "San Jose",
+    "description": "Ensure security of online transactions. Develop fraud detection systems."
   },
   {
     "id": 32,
-    "image": "/images/Notion.png",
-    "type": "Part-time",
-    "title": "Junior UI Designer",
-    "company": "Notion",
-    "date": "1 day ago",
-    "salary": {
-      "hourly": "30",
-      "monthly": "3000",
-      "annually": "34000"
-    },
-    "location": "Madrid",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Tiktok.png",
+    "type": "Part-Time",
+    "title": "Video Content Analyst",
+    "company": "TikTok",
+    "date": "2 days ago",
+    "salary": { "hourly": "40", "monthly": "3500", "annually": "45000" },
+    "location": "Singapore",
+    "description": "Analyze user-generated videos. Monitor for trends and compliance."
   },
   {
     "id": 33,
-    "image": "/images/Spline.png",
-    "type": "Internship",
-    "title": "Technical Support Engineer",
-    "company": "Spline studio",
-    "date": "1 day ago",
-    "salary": {
-      "hourly": "50",
-      "monthly": "5500",
-      "annually": "55000"
-    },
-    "location": "United States",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Pinterest.png",
+    "type": "Temporary",
+    "title": "Community Manager",
+    "company": "Pinterest",
+    "date": "1 week ago",
+    "salary": { "hourly": "42", "monthly": "3800", "annually": "48000" },
+    "location": "Remote",
+    "description": "Engage with users and manage community campaigns. Provide insights to improve user satisfaction."
   },
   {
     "id": 34,
-    "image": "/images/Raycast.png",
-    "type": "Full-time",
-    "title": "Product Designer",
-    "company": "Raycast corp",
-    "date": "2 days ago",
-    "salary": {
-      "hourly": "42",
-      "monthly": "4000",
-      "annually": "42000"
-    },
-    "location": "London",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Atlassian.png",
+    "type": "Full-Time",
+    "title": "Software Engineer",
+    "company": "Atlassian",
+    "date": "3 days ago",
+    "salary": { "hourly": "75", "monthly": "8000", "annually": "96000" },
+    "location": "Sydney",
+    "description": "Develop collaboration tools like Jira and Confluence. Work with distributed teams globally."
   },
   {
     "id": 35,
-    "image": "/images/Loom.png",
-    "type": "Full-time",
-    "title": "Copywriter (Growth)",
-    "company": "Loom",
-    "date": "3 days ago",
-    "salary": {
-      "hourly": "38",
-      "monthly": "3800",
-      "annually": "38000"
-    },
-    "location": "Boston",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Shopify.png",
+    "type": "Full-Time",
+    "title": "Frontend Developer",
+    "company": "Shopify",
+    "date": "2 days ago",
+    "salary": { "hourly": "72", "monthly": "7800", "annually": "94000" },
+    "location": "Toronto",
+    "description": "Build and optimize storefront features for global merchants. Ensure high performance and accessibility."
   },
   {
     "id": 36,
-    "image": "/images/Trainline.png",
-    "type": "Part-time",
-    "title": "Senior UX/UI designer",
-    "company": "Trainline group",
-    "date": "3 days ago",
-    "salary": {
-      "hourly": "30",
-      "monthly": "3000",
-      "annually": "35000"
-    },
-    "location": "Paris",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt.s"
+    "image": "/images/Spotify.png",
+    "type": "Internship",
+    "title": "Data Intern",
+    "company": "Spotify",
+    "date": "1 week ago",
+    "salary": { "hourly": "22", "monthly": "1700", "annually": "21000" },
+    "location": "Stockholm",
+    "description": "Assist in analyzing music listening patterns and provide support to data teams."
   },
   {
     "id": 37,
-    "image": "/images/Raycast.png",
-    "type": "Temporary",
-    "title": "Full Stack Developer",
-    "company": "Tech Solutions",
-    "date": "3 days ago",
-    "salary": {
-      "hourly": "55",
-      "monthly": "5000",
-      "annually": "55000"
-    },
-    "location": "Denver",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Airbnb.png",
+    "type": "Contract",
+    "title": "UX Researcher",
+    "company": "Airbnb",
+    "date": "4 days ago",
+    "salary": { "hourly": "58", "monthly": "6000", "annually": "72000" },
+    "location": "Berlin",
+    "description": "Conduct usability testing and user research to guide product design."
   },
   {
     "id": 38,
-    "image": "/images/Raycast.png",
-    "type": "Contract",
-    "title": "Security Engineer",
-    "company": "Secure Systems",
-    "date": "3 days ago",
-    "salary": {
-      "hourly": "40",
-      "monthly": "4000",
-      "annually": "42000"
-    },
-    "location": "Miami",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Uber.png",
+    "type": "Temporary",
+    "title": "Operations Analyst",
+    "company": "Uber",
+    "date": "5 days ago",
+    "salary": { "hourly": "52", "monthly": "5000", "annually": "64000" },
+    "location": "London",
+    "description": "Monitor ride data, optimize driver supply, and support local city operations."
   },
   {
     "id": 39,
-    "image": "/images/Raycast.png",
-    "type": "Full-time",
-    "title": "Product Manager",
-    "company": "Innovate Inc",
+    "image": "/images/Meta.png",
+    "type": "Full-Time",
+    "title": "VR Developer",
+    "company": "Meta Reality Labs",
     "date": "3 days ago",
-    "salary": {
-      "hourly": "40",
-      "monthly": "4000",
-      "annually": "42000"
-    },
-    "location": "Los Angeles",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "salary": { "hourly": "95", "monthly": "10000", "annually": "120000" },
+    "location": "Seattle",
+    "description": "Develop VR applications and features. Work closely with 3D artists and hardware engineers."
   },
   {
     "id": 40,
-    "image": "/images/Trainline.png",
-    "type": "Part-time",
-    "title": "QA Engineer",
-    "company": "Quality Co",
-    "date": "4 days ago",
-    "salary": {
-      "hourly": "80",
-      "monthly": "8000",
-      "annually": "89000"
-    },
-    "location": "Portland",
-    "description": "Mollit in laborum tempor Lorem incididunt irure. Aute eu ex ad sunt. Pariatur sint culpa do incididunt eiusmod eiusmod culpa. laborum tempor Lorem incididunt."
+    "image": "/images/Netflix.png",
+    "type": "Full-Time",
+    "title": "Streaming Engineer",
+    "company": "Netflix",
+    "date": "2 days ago",
+    "salary": { "hourly": "88", "monthly": "9400", "annually": "114000" },
+    "location": "Los Angeles",
+    "description": "Enhance streaming performance across devices. Work on adaptive bitrate and compression techniques."
   }
 ]
